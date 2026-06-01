@@ -1,0 +1,1113 @@
+Test Case ID,Module Name,Feature Name,Test Scenario,Preconditions,Test Steps,Expected Result,Actual Result,Test Data,Priority,Severity,Test Type,Status,Browser/Device Compatibility,Remarks
+TC_AUTH_001,Authentication,Signup,Verify successful user registration,On Signup page,"1. Enter valid details
+2. Submit",Redirected to dashboard,Pending,"Valid Email, Password",High,Critical,Functional,Unexecuted,"Chrome, Safari, iOS, Android",Standard Case
+TC_AUTH_002,Authentication,Signup,Verify successful user registration - Test max allowed string length,On Signup page,"1. Enter valid details
+2. Submit
+- Input string of 255 chars",System handles limit gracefully,Pending,"Valid Email, Password",Medium,Minor,Boundary,Unexecuted,Varies,Boundary Variation
+TC_AUTH_003,Authentication,Signup,Verify successful user registration - Test empty required fields,On Signup page,"1. Enter valid details
+2. Submit
+- Submit without required data",Validation errors highlight fields,Pending,"Valid Email, Password",Medium,Minor,Negative,Unexecuted,Varies,Negative Variation
+TC_AUTH_004,Authentication,Signup,Verify successful user registration - Test on Firefox,On Signup page,"1. Enter valid details
+2. Submit
+- Perform action on Firefox browser",UI functions identically to Chrome,Pending,"Valid Email, Password",Medium,Minor,Cross-Browser,Unexecuted,Varies,Cross-Browser Variation
+TC_AUTH_005,Authentication,Signup,Verify successful user registration - Test on small viewport (320px),On Signup page,"1. Enter valid details
+2. Submit
+- Resize window to 320px and perform action",UI adjusts without overflow,Pending,"Valid Email, Password",Medium,Minor,Mobile,Unexecuted,Varies,Mobile Variation
+TC_AUTH_006,Authentication,Signup,Verify successful user registration - Simulate page refresh during action,On Signup page,"1. Enter valid details
+2. Submit
+- Hit F5 mid-process",State is recovered or fails safely,Pending,"Valid Email, Password",Medium,Minor,Interrupt,Unexecuted,Varies,Interrupt Variation
+TC_AUTH_007,Authentication,Signup,Verify signup with existing email,On Signup page,"1. Enter existing email
+2. Submit",Error message shown,Pending,Existing Email,High,Major,Functional,Unexecuted,"Chrome, Safari, iOS, Android",Standard Case
+TC_AUTH_008,Authentication,Signup,Verify signup with existing email - Test max allowed string length,On Signup page,"1. Enter existing email
+2. Submit
+- Input string of 255 chars",System handles limit gracefully,Pending,Existing Email,Medium,Minor,Boundary,Unexecuted,Varies,Boundary Variation
+TC_AUTH_009,Authentication,Signup,Verify signup with existing email - Test empty required fields,On Signup page,"1. Enter existing email
+2. Submit
+- Submit without required data",Validation errors highlight fields,Pending,Existing Email,Medium,Minor,Negative,Unexecuted,Varies,Negative Variation
+TC_AUTH_010,Authentication,Signup,Verify signup with existing email - Test on Firefox,On Signup page,"1. Enter existing email
+2. Submit
+- Perform action on Firefox browser",UI functions identically to Chrome,Pending,Existing Email,Medium,Minor,Cross-Browser,Unexecuted,Varies,Cross-Browser Variation
+TC_AUTH_011,Authentication,Signup,Verify signup with existing email - Test on small viewport (320px),On Signup page,"1. Enter existing email
+2. Submit
+- Resize window to 320px and perform action",UI adjusts without overflow,Pending,Existing Email,Medium,Minor,Mobile,Unexecuted,Varies,Mobile Variation
+TC_AUTH_012,Authentication,Signup,Verify signup with existing email - Simulate page refresh during action,On Signup page,"1. Enter existing email
+2. Submit
+- Hit F5 mid-process",State is recovered or fails safely,Pending,Existing Email,Medium,Minor,Interrupt,Unexecuted,Varies,Interrupt Variation
+TC_AUTH_013,Authentication,Signup,Verify signup with weak password,On Signup page,"1. Enter weak password
+2. Submit",Validation error shown,Pending,Password: 123,Medium,Minor,Validation,Unexecuted,"Chrome, Safari, iOS, Android",Standard Case
+TC_AUTH_014,Authentication,Signup,Verify signup with weak password - Test max allowed string length,On Signup page,"1. Enter weak password
+2. Submit
+- Input string of 255 chars",System handles limit gracefully,Pending,Password: 123,Medium,Minor,Boundary,Unexecuted,Varies,Boundary Variation
+TC_AUTH_015,Authentication,Signup,Verify signup with weak password - Test empty required fields,On Signup page,"1. Enter weak password
+2. Submit
+- Submit without required data",Validation errors highlight fields,Pending,Password: 123,Medium,Minor,Negative,Unexecuted,Varies,Negative Variation
+TC_AUTH_016,Authentication,Signup,Verify signup with weak password - Test on Firefox,On Signup page,"1. Enter weak password
+2. Submit
+- Perform action on Firefox browser",UI functions identically to Chrome,Pending,Password: 123,Medium,Minor,Cross-Browser,Unexecuted,Varies,Cross-Browser Variation
+TC_AUTH_017,Authentication,Signup,Verify signup with weak password - Test on small viewport (320px),On Signup page,"1. Enter weak password
+2. Submit
+- Resize window to 320px and perform action",UI adjusts without overflow,Pending,Password: 123,Medium,Minor,Mobile,Unexecuted,Varies,Mobile Variation
+TC_AUTH_018,Authentication,Signup,Verify signup with weak password - Simulate page refresh during action,On Signup page,"1. Enter weak password
+2. Submit
+- Hit F5 mid-process",State is recovered or fails safely,Pending,Password: 123,Medium,Minor,Interrupt,Unexecuted,Varies,Interrupt Variation
+TC_AUTH_019,Authentication,Signup,Verify signup password mask/unmask,On Signup page,"1. Enter password
+2. Click eye icon",Password toggles visibility,Pending,N/A,Low,Minor,UI,Unexecuted,"Chrome, Safari, iOS, Android",Standard Case
+TC_AUTH_020,Authentication,Signup,Verify signup password mask/unmask - Test max allowed string length,On Signup page,"1. Enter password
+2. Click eye icon
+- Input string of 255 chars",System handles limit gracefully,Pending,N/A,Medium,Minor,Boundary,Unexecuted,Varies,Boundary Variation
+TC_AUTH_021,Authentication,Signup,Verify signup password mask/unmask - Test empty required fields,On Signup page,"1. Enter password
+2. Click eye icon
+- Submit without required data",Validation errors highlight fields,Pending,N/A,Medium,Minor,Negative,Unexecuted,Varies,Negative Variation
+TC_AUTH_022,Authentication,Signup,Verify signup password mask/unmask - Test on Firefox,On Signup page,"1. Enter password
+2. Click eye icon
+- Perform action on Firefox browser",UI functions identically to Chrome,Pending,N/A,Medium,Minor,Cross-Browser,Unexecuted,Varies,Cross-Browser Variation
+TC_AUTH_023,Authentication,Signup,Verify signup password mask/unmask - Test on small viewport (320px),On Signup page,"1. Enter password
+2. Click eye icon
+- Resize window to 320px and perform action",UI adjusts without overflow,Pending,N/A,Medium,Minor,Mobile,Unexecuted,Varies,Mobile Variation
+TC_AUTH_024,Authentication,Signup,Verify signup password mask/unmask - Simulate page refresh during action,On Signup page,"1. Enter password
+2. Click eye icon
+- Hit F5 mid-process",State is recovered or fails safely,Pending,N/A,Medium,Minor,Interrupt,Unexecuted,Varies,Interrupt Variation
+TC_AUTH_025,Authentication,Login,Verify successful login,Registered User,"1. Enter credentials
+2. Submit",Logged in successfully,Pending,Valid credentials,High,Critical,Functional,Unexecuted,"Chrome, Safari, iOS, Android",Standard Case
+TC_AUTH_026,Authentication,Login,Verify successful login - Test max allowed string length,Registered User,"1. Enter credentials
+2. Submit
+- Input string of 255 chars",System handles limit gracefully,Pending,Valid credentials,Medium,Minor,Boundary,Unexecuted,Varies,Boundary Variation
+TC_AUTH_027,Authentication,Login,Verify successful login - Test empty required fields,Registered User,"1. Enter credentials
+2. Submit
+- Submit without required data",Validation errors highlight fields,Pending,Valid credentials,Medium,Minor,Negative,Unexecuted,Varies,Negative Variation
+TC_AUTH_028,Authentication,Login,Verify successful login - Test on Firefox,Registered User,"1. Enter credentials
+2. Submit
+- Perform action on Firefox browser",UI functions identically to Chrome,Pending,Valid credentials,Medium,Minor,Cross-Browser,Unexecuted,Varies,Cross-Browser Variation
+TC_AUTH_029,Authentication,Login,Verify successful login - Test on small viewport (320px),Registered User,"1. Enter credentials
+2. Submit
+- Resize window to 320px and perform action",UI adjusts without overflow,Pending,Valid credentials,Medium,Minor,Mobile,Unexecuted,Varies,Mobile Variation
+TC_AUTH_030,Authentication,Login,Verify successful login - Simulate page refresh during action,Registered User,"1. Enter credentials
+2. Submit
+- Hit F5 mid-process",State is recovered or fails safely,Pending,Valid credentials,Medium,Minor,Interrupt,Unexecuted,Varies,Interrupt Variation
+TC_AUTH_031,Authentication,Login,Verify login with invalid password,Registered User,"1. Enter wrong password
+2. Submit",Invalid credentials error,Pending,Wrong password,High,Major,Functional,Unexecuted,"Chrome, Safari, iOS, Android",Standard Case
+TC_AUTH_032,Authentication,Login,Verify login with invalid password - Test max allowed string length,Registered User,"1. Enter wrong password
+2. Submit
+- Input string of 255 chars",System handles limit gracefully,Pending,Wrong password,Medium,Minor,Boundary,Unexecuted,Varies,Boundary Variation
+TC_AUTH_033,Authentication,Login,Verify login with invalid password - Test empty required fields,Registered User,"1. Enter wrong password
+2. Submit
+- Submit without required data",Validation errors highlight fields,Pending,Wrong password,Medium,Minor,Negative,Unexecuted,Varies,Negative Variation
+TC_AUTH_034,Authentication,Login,Verify login with invalid password - Test on Firefox,Registered User,"1. Enter wrong password
+2. Submit
+- Perform action on Firefox browser",UI functions identically to Chrome,Pending,Wrong password,Medium,Minor,Cross-Browser,Unexecuted,Varies,Cross-Browser Variation
+TC_AUTH_035,Authentication,Login,Verify login with invalid password - Test on small viewport (320px),Registered User,"1. Enter wrong password
+2. Submit
+- Resize window to 320px and perform action",UI adjusts without overflow,Pending,Wrong password,Medium,Minor,Mobile,Unexecuted,Varies,Mobile Variation
+TC_AUTH_036,Authentication,Login,Verify login with invalid password - Simulate page refresh during action,Registered User,"1. Enter wrong password
+2. Submit
+- Hit F5 mid-process",State is recovered or fails safely,Pending,Wrong password,Medium,Minor,Interrupt,Unexecuted,Varies,Interrupt Variation
+TC_AUTH_037,Authentication,Login,Verify SQL injection on login,On Login page,"1. Enter SQLi payload in email
+2. Submit","Input sanitized, login fails safely",Pending,' OR 1=1 --,High,Critical,Security,Unexecuted,"Chrome, Safari, iOS, Android",Standard Case
+TC_AUTH_038,Authentication,Login,Verify SQL injection on login - Test max allowed string length,On Login page,"1. Enter SQLi payload in email
+2. Submit
+- Input string of 255 chars",System handles limit gracefully,Pending,' OR 1=1 --,Medium,Minor,Boundary,Unexecuted,Varies,Boundary Variation
+TC_AUTH_039,Authentication,Login,Verify SQL injection on login - Test empty required fields,On Login page,"1. Enter SQLi payload in email
+2. Submit
+- Submit without required data",Validation errors highlight fields,Pending,' OR 1=1 --,Medium,Minor,Negative,Unexecuted,Varies,Negative Variation
+TC_AUTH_040,Authentication,Login,Verify SQL injection on login - Test on Firefox,On Login page,"1. Enter SQLi payload in email
+2. Submit
+- Perform action on Firefox browser",UI functions identically to Chrome,Pending,' OR 1=1 --,Medium,Minor,Cross-Browser,Unexecuted,Varies,Cross-Browser Variation
+TC_AUTH_041,Authentication,Login,Verify SQL injection on login - Test on small viewport (320px),On Login page,"1. Enter SQLi payload in email
+2. Submit
+- Resize window to 320px and perform action",UI adjusts without overflow,Pending,' OR 1=1 --,Medium,Minor,Mobile,Unexecuted,Varies,Mobile Variation
+TC_AUTH_042,Authentication,Login,Verify SQL injection on login - Simulate page refresh during action,On Login page,"1. Enter SQLi payload in email
+2. Submit
+- Hit F5 mid-process",State is recovered or fails safely,Pending,' OR 1=1 --,Medium,Minor,Interrupt,Unexecuted,Varies,Interrupt Variation
+TC_AUTH_043,Authentication,Login,Verify session timeout,Logged in,"1. Leave idle for 30 mins
+2. Perform action",Redirected to login,Pending,N/A,Medium,Major,Security,Unexecuted,"Chrome, Safari, iOS, Android",Standard Case
+TC_AUTH_044,Authentication,Login,Verify session timeout - Test max allowed string length,Logged in,"1. Leave idle for 30 mins
+2. Perform action
+- Input string of 255 chars",System handles limit gracefully,Pending,N/A,Medium,Minor,Boundary,Unexecuted,Varies,Boundary Variation
+TC_AUTH_045,Authentication,Login,Verify session timeout - Test empty required fields,Logged in,"1. Leave idle for 30 mins
+2. Perform action
+- Submit without required data",Validation errors highlight fields,Pending,N/A,Medium,Minor,Negative,Unexecuted,Varies,Negative Variation
+TC_AUTH_046,Authentication,Login,Verify session timeout - Test on Firefox,Logged in,"1. Leave idle for 30 mins
+2. Perform action
+- Perform action on Firefox browser",UI functions identically to Chrome,Pending,N/A,Medium,Minor,Cross-Browser,Unexecuted,Varies,Cross-Browser Variation
+TC_AUTH_047,Authentication,Login,Verify session timeout - Test on small viewport (320px),Logged in,"1. Leave idle for 30 mins
+2. Perform action
+- Resize window to 320px and perform action",UI adjusts without overflow,Pending,N/A,Medium,Minor,Mobile,Unexecuted,Varies,Mobile Variation
+TC_AUTH_048,Authentication,Login,Verify session timeout - Simulate page refresh during action,Logged in,"1. Leave idle for 30 mins
+2. Perform action
+- Hit F5 mid-process",State is recovered or fails safely,Pending,N/A,Medium,Minor,Interrupt,Unexecuted,Varies,Interrupt Variation
+TC_AUTH_049,Authentication,Forgot Password,Verify password reset link,Registered User,"1. Enter email
+2. Submit",Reset link sent to email,Pending,Valid email,High,Major,Functional,Unexecuted,"Chrome, Safari, iOS, Android",Standard Case
+TC_AUTH_050,Authentication,Forgot Password,Verify password reset link - Test max allowed string length,Registered User,"1. Enter email
+2. Submit
+- Input string of 255 chars",System handles limit gracefully,Pending,Valid email,Medium,Minor,Boundary,Unexecuted,Varies,Boundary Variation
+TC_AUTH_051,Authentication,Forgot Password,Verify password reset link - Test empty required fields,Registered User,"1. Enter email
+2. Submit
+- Submit without required data",Validation errors highlight fields,Pending,Valid email,Medium,Minor,Negative,Unexecuted,Varies,Negative Variation
+TC_AUTH_052,Authentication,Forgot Password,Verify password reset link - Test on Firefox,Registered User,"1. Enter email
+2. Submit
+- Perform action on Firefox browser",UI functions identically to Chrome,Pending,Valid email,Medium,Minor,Cross-Browser,Unexecuted,Varies,Cross-Browser Variation
+TC_AUTH_053,Authentication,Forgot Password,Verify password reset link - Test on small viewport (320px),Registered User,"1. Enter email
+2. Submit
+- Resize window to 320px and perform action",UI adjusts without overflow,Pending,Valid email,Medium,Minor,Mobile,Unexecuted,Varies,Mobile Variation
+TC_AUTH_054,Authentication,Forgot Password,Verify password reset link - Simulate page refresh during action,Registered User,"1. Enter email
+2. Submit
+- Hit F5 mid-process",State is recovered or fails safely,Pending,Valid email,Medium,Minor,Interrupt,Unexecuted,Varies,Interrupt Variation
+TC_AUTH_055,Authentication,Forgot Password,Verify reset with invalid email,On Forgot Password,1. Enter unregistered email,Appropriate message shown,Pending,invalid@test.com,Medium,Minor,Functional,Unexecuted,"Chrome, Safari, iOS, Android",Standard Case
+TC_AUTH_056,Authentication,Forgot Password,Verify reset with invalid email - Test max allowed string length,On Forgot Password,"1. Enter unregistered email
+- Input string of 255 chars",System handles limit gracefully,Pending,invalid@test.com,Medium,Minor,Boundary,Unexecuted,Varies,Boundary Variation
+TC_AUTH_057,Authentication,Forgot Password,Verify reset with invalid email - Test empty required fields,On Forgot Password,"1. Enter unregistered email
+- Submit without required data",Validation errors highlight fields,Pending,invalid@test.com,Medium,Minor,Negative,Unexecuted,Varies,Negative Variation
+TC_AUTH_058,Authentication,Forgot Password,Verify reset with invalid email - Test on Firefox,On Forgot Password,"1. Enter unregistered email
+- Perform action on Firefox browser",UI functions identically to Chrome,Pending,invalid@test.com,Medium,Minor,Cross-Browser,Unexecuted,Varies,Cross-Browser Variation
+TC_AUTH_059,Authentication,Forgot Password,Verify reset with invalid email - Test on small viewport (320px),On Forgot Password,"1. Enter unregistered email
+- Resize window to 320px and perform action",UI adjusts without overflow,Pending,invalid@test.com,Medium,Minor,Mobile,Unexecuted,Varies,Mobile Variation
+TC_AUTH_060,Authentication,Forgot Password,Verify reset with invalid email - Simulate page refresh during action,On Forgot Password,"1. Enter unregistered email
+- Hit F5 mid-process",State is recovered or fails safely,Pending,invalid@test.com,Medium,Minor,Interrupt,Unexecuted,Varies,Interrupt Variation
+TC_AUTH_061,Authentication,OTP Verification,Verify correct OTP,OTP Sent,1. Enter 6-digit OTP,Verification successful,Pending,123456,High,Critical,Functional,Unexecuted,"Chrome, Safari, iOS, Android",Standard Case
+TC_AUTH_062,Authentication,OTP Verification,Verify correct OTP - Test max allowed string length,OTP Sent,"1. Enter 6-digit OTP
+- Input string of 255 chars",System handles limit gracefully,Pending,123456,Medium,Minor,Boundary,Unexecuted,Varies,Boundary Variation
+TC_AUTH_063,Authentication,OTP Verification,Verify correct OTP - Test empty required fields,OTP Sent,"1. Enter 6-digit OTP
+- Submit without required data",Validation errors highlight fields,Pending,123456,Medium,Minor,Negative,Unexecuted,Varies,Negative Variation
+TC_AUTH_064,Authentication,OTP Verification,Verify correct OTP - Test on Firefox,OTP Sent,"1. Enter 6-digit OTP
+- Perform action on Firefox browser",UI functions identically to Chrome,Pending,123456,Medium,Minor,Cross-Browser,Unexecuted,Varies,Cross-Browser Variation
+TC_AUTH_065,Authentication,OTP Verification,Verify correct OTP - Test on small viewport (320px),OTP Sent,"1. Enter 6-digit OTP
+- Resize window to 320px and perform action",UI adjusts without overflow,Pending,123456,Medium,Minor,Mobile,Unexecuted,Varies,Mobile Variation
+TC_AUTH_066,Authentication,OTP Verification,Verify correct OTP - Simulate page refresh during action,OTP Sent,"1. Enter 6-digit OTP
+- Hit F5 mid-process",State is recovered or fails safely,Pending,123456,Medium,Minor,Interrupt,Unexecuted,Varies,Interrupt Variation
+TC_AUTH_067,Authentication,OTP Verification,Verify incorrect OTP,OTP Sent,1. Enter wrong OTP,Error message shown,Pending,000000,High,Major,Functional,Unexecuted,"Chrome, Safari, iOS, Android",Standard Case
+TC_AUTH_068,Authentication,OTP Verification,Verify incorrect OTP - Test max allowed string length,OTP Sent,"1. Enter wrong OTP
+- Input string of 255 chars",System handles limit gracefully,Pending,000000,Medium,Minor,Boundary,Unexecuted,Varies,Boundary Variation
+TC_AUTH_069,Authentication,OTP Verification,Verify incorrect OTP - Test empty required fields,OTP Sent,"1. Enter wrong OTP
+- Submit without required data",Validation errors highlight fields,Pending,000000,Medium,Minor,Negative,Unexecuted,Varies,Negative Variation
+TC_AUTH_070,Authentication,OTP Verification,Verify incorrect OTP - Test on Firefox,OTP Sent,"1. Enter wrong OTP
+- Perform action on Firefox browser",UI functions identically to Chrome,Pending,000000,Medium,Minor,Cross-Browser,Unexecuted,Varies,Cross-Browser Variation
+TC_AUTH_071,Authentication,OTP Verification,Verify incorrect OTP - Test on small viewport (320px),OTP Sent,"1. Enter wrong OTP
+- Resize window to 320px and perform action",UI adjusts without overflow,Pending,000000,Medium,Minor,Mobile,Unexecuted,Varies,Mobile Variation
+TC_AUTH_072,Authentication,OTP Verification,Verify incorrect OTP - Simulate page refresh during action,OTP Sent,"1. Enter wrong OTP
+- Hit F5 mid-process",State is recovered or fails safely,Pending,000000,Medium,Minor,Interrupt,Unexecuted,Varies,Interrupt Variation
+TC_AUTH_073,Authentication,OTP Verification,Verify expired OTP,OTP Sent 15 mins ago,1. Enter expired OTP,Expired error shown,Pending,Old OTP,Medium,Major,Functional,Unexecuted,"Chrome, Safari, iOS, Android",Standard Case
+TC_AUTH_074,Authentication,OTP Verification,Verify expired OTP - Test max allowed string length,OTP Sent 15 mins ago,"1. Enter expired OTP
+- Input string of 255 chars",System handles limit gracefully,Pending,Old OTP,Medium,Minor,Boundary,Unexecuted,Varies,Boundary Variation
+TC_AUTH_075,Authentication,OTP Verification,Verify expired OTP - Test empty required fields,OTP Sent 15 mins ago,"1. Enter expired OTP
+- Submit without required data",Validation errors highlight fields,Pending,Old OTP,Medium,Minor,Negative,Unexecuted,Varies,Negative Variation
+TC_AUTH_076,Authentication,OTP Verification,Verify expired OTP - Test on Firefox,OTP Sent 15 mins ago,"1. Enter expired OTP
+- Perform action on Firefox browser",UI functions identically to Chrome,Pending,Old OTP,Medium,Minor,Cross-Browser,Unexecuted,Varies,Cross-Browser Variation
+TC_AUTH_077,Authentication,OTP Verification,Verify expired OTP - Test on small viewport (320px),OTP Sent 15 mins ago,"1. Enter expired OTP
+- Resize window to 320px and perform action",UI adjusts without overflow,Pending,Old OTP,Medium,Minor,Mobile,Unexecuted,Varies,Mobile Variation
+TC_AUTH_078,Authentication,OTP Verification,Verify expired OTP - Simulate page refresh during action,OTP Sent 15 mins ago,"1. Enter expired OTP
+- Hit F5 mid-process",State is recovered or fails safely,Pending,Old OTP,Medium,Minor,Interrupt,Unexecuted,Varies,Interrupt Variation
+TC_AUTH_079,Authentication,Social Login,Verify Google Login,On Login page,"1. Click Google Login
+2. Auth",Logged in via Google,Pending,Google account,High,Major,API,Unexecuted,"Chrome, Safari, iOS, Android",Standard Case
+TC_AUTH_080,Authentication,Social Login,Verify Google Login - Test max allowed string length,On Login page,"1. Click Google Login
+2. Auth
+- Input string of 255 chars",System handles limit gracefully,Pending,Google account,Medium,Minor,Boundary,Unexecuted,Varies,Boundary Variation
+TC_AUTH_081,Authentication,Social Login,Verify Google Login - Test empty required fields,On Login page,"1. Click Google Login
+2. Auth
+- Submit without required data",Validation errors highlight fields,Pending,Google account,Medium,Minor,Negative,Unexecuted,Varies,Negative Variation
+TC_AUTH_082,Authentication,Social Login,Verify Google Login - Test on Firefox,On Login page,"1. Click Google Login
+2. Auth
+- Perform action on Firefox browser",UI functions identically to Chrome,Pending,Google account,Medium,Minor,Cross-Browser,Unexecuted,Varies,Cross-Browser Variation
+TC_AUTH_083,Authentication,Social Login,Verify Google Login - Test on small viewport (320px),On Login page,"1. Click Google Login
+2. Auth
+- Resize window to 320px and perform action",UI adjusts without overflow,Pending,Google account,Medium,Minor,Mobile,Unexecuted,Varies,Mobile Variation
+TC_AUTH_084,Authentication,Social Login,Verify Google Login - Simulate page refresh during action,On Login page,"1. Click Google Login
+2. Auth
+- Hit F5 mid-process",State is recovered or fails safely,Pending,Google account,Medium,Minor,Interrupt,Unexecuted,Varies,Interrupt Variation
+TC_AUTH_085,Authentication,Social Login,Verify Facebook Login,On Login page,"1. Click Facebook Login
+2. Auth",Logged in via FB,Pending,FB account,High,Major,API,Unexecuted,"Chrome, Safari, iOS, Android",Standard Case
+TC_AUTH_086,Authentication,Social Login,Verify Facebook Login - Test max allowed string length,On Login page,"1. Click Facebook Login
+2. Auth
+- Input string of 255 chars",System handles limit gracefully,Pending,FB account,Medium,Minor,Boundary,Unexecuted,Varies,Boundary Variation
+TC_AUTH_087,Authentication,Social Login,Verify Facebook Login - Test empty required fields,On Login page,"1. Click Facebook Login
+2. Auth
+- Submit without required data",Validation errors highlight fields,Pending,FB account,Medium,Minor,Negative,Unexecuted,Varies,Negative Variation
+TC_AUTH_088,Authentication,Social Login,Verify Facebook Login - Test on Firefox,On Login page,"1. Click Facebook Login
+2. Auth
+- Perform action on Firefox browser",UI functions identically to Chrome,Pending,FB account,Medium,Minor,Cross-Browser,Unexecuted,Varies,Cross-Browser Variation
+TC_AUTH_089,Authentication,Social Login,Verify Facebook Login - Test on small viewport (320px),On Login page,"1. Click Facebook Login
+2. Auth
+- Resize window to 320px and perform action",UI adjusts without overflow,Pending,FB account,Medium,Minor,Mobile,Unexecuted,Varies,Mobile Variation
+TC_AUTH_090,Authentication,Social Login,Verify Facebook Login - Simulate page refresh during action,On Login page,"1. Click Facebook Login
+2. Auth
+- Hit F5 mid-process",State is recovered or fails safely,Pending,FB account,Medium,Minor,Interrupt,Unexecuted,Varies,Interrupt Variation
+TC_HOME_091,Homepage,Navigation,Verify all main nav links,On Homepage,1. Click each nav link,Redirects to correct pages,Pending,N/A,High,Major,Functional,Unexecuted,"Chrome, Safari, iOS, Android",Standard Case
+TC_HOME_092,Homepage,Navigation,Verify all main nav links - Test max allowed string length,On Homepage,"1. Click each nav link
+- Input string of 255 chars",System handles limit gracefully,Pending,N/A,Medium,Minor,Boundary,Unexecuted,Varies,Boundary Variation
+TC_HOME_093,Homepage,Navigation,Verify all main nav links - Test empty required fields,On Homepage,"1. Click each nav link
+- Submit without required data",Validation errors highlight fields,Pending,N/A,Medium,Minor,Negative,Unexecuted,Varies,Negative Variation
+TC_HOME_094,Homepage,Navigation,Verify all main nav links - Test on Firefox,On Homepage,"1. Click each nav link
+- Perform action on Firefox browser",UI functions identically to Chrome,Pending,N/A,Medium,Minor,Cross-Browser,Unexecuted,Varies,Cross-Browser Variation
+TC_HOME_095,Homepage,Navigation,Verify all main nav links - Test on small viewport (320px),On Homepage,"1. Click each nav link
+- Resize window to 320px and perform action",UI adjusts without overflow,Pending,N/A,Medium,Minor,Mobile,Unexecuted,Varies,Mobile Variation
+TC_HOME_096,Homepage,Navigation,Verify all main nav links - Simulate page refresh during action,On Homepage,"1. Click each nav link
+- Hit F5 mid-process",State is recovered or fails safely,Pending,N/A,Medium,Minor,Interrupt,Unexecuted,Varies,Interrupt Variation
+TC_HOME_097,Homepage,Hero Banner,Verify hero carousel auto-play,On Homepage,1. Observe hero banner,Auto-scrolls every 5s,Pending,N/A,Low,Minor,UI,Unexecuted,"Chrome, Safari, iOS, Android",Standard Case
+TC_HOME_098,Homepage,Hero Banner,Verify hero carousel auto-play - Test max allowed string length,On Homepage,"1. Observe hero banner
+- Input string of 255 chars",System handles limit gracefully,Pending,N/A,Medium,Minor,Boundary,Unexecuted,Varies,Boundary Variation
+TC_HOME_099,Homepage,Hero Banner,Verify hero carousel auto-play - Test empty required fields,On Homepage,"1. Observe hero banner
+- Submit without required data",Validation errors highlight fields,Pending,N/A,Medium,Minor,Negative,Unexecuted,Varies,Negative Variation
+TC_HOME_100,Homepage,Hero Banner,Verify hero carousel auto-play - Test on Firefox,On Homepage,"1. Observe hero banner
+- Perform action on Firefox browser",UI functions identically to Chrome,Pending,N/A,Medium,Minor,Cross-Browser,Unexecuted,Varies,Cross-Browser Variation
+TC_HOME_101,Homepage,Hero Banner,Verify hero carousel auto-play - Test on small viewport (320px),On Homepage,"1. Observe hero banner
+- Resize window to 320px and perform action",UI adjusts without overflow,Pending,N/A,Medium,Minor,Mobile,Unexecuted,Varies,Mobile Variation
+TC_HOME_102,Homepage,Hero Banner,Verify hero carousel auto-play - Simulate page refresh during action,On Homepage,"1. Observe hero banner
+- Hit F5 mid-process",State is recovered or fails safely,Pending,N/A,Medium,Minor,Interrupt,Unexecuted,Varies,Interrupt Variation
+TC_HOME_103,Homepage,Hero Banner,Verify CTA button clicks,On Homepage,1. Click CTA on banner,Redirects to promo page,Pending,N/A,Medium,Major,Functional,Unexecuted,"Chrome, Safari, iOS, Android",Standard Case
+TC_HOME_104,Homepage,Hero Banner,Verify CTA button clicks - Test max allowed string length,On Homepage,"1. Click CTA on banner
+- Input string of 255 chars",System handles limit gracefully,Pending,N/A,Medium,Minor,Boundary,Unexecuted,Varies,Boundary Variation
+TC_HOME_105,Homepage,Hero Banner,Verify CTA button clicks - Test empty required fields,On Homepage,"1. Click CTA on banner
+- Submit without required data",Validation errors highlight fields,Pending,N/A,Medium,Minor,Negative,Unexecuted,Varies,Negative Variation
+TC_HOME_106,Homepage,Hero Banner,Verify CTA button clicks - Test on Firefox,On Homepage,"1. Click CTA on banner
+- Perform action on Firefox browser",UI functions identically to Chrome,Pending,N/A,Medium,Minor,Cross-Browser,Unexecuted,Varies,Cross-Browser Variation
+TC_HOME_107,Homepage,Hero Banner,Verify CTA button clicks - Test on small viewport (320px),On Homepage,"1. Click CTA on banner
+- Resize window to 320px and perform action",UI adjusts without overflow,Pending,N/A,Medium,Minor,Mobile,Unexecuted,Varies,Mobile Variation
+TC_HOME_108,Homepage,Hero Banner,Verify CTA button clicks - Simulate page refresh during action,On Homepage,"1. Click CTA on banner
+- Hit F5 mid-process",State is recovered or fails safely,Pending,N/A,Medium,Minor,Interrupt,Unexecuted,Varies,Interrupt Variation
+TC_HOME_109,Homepage,Featured Products,Verify product cards UI,On Homepage,1. Scroll to featured,Cards render correctly,Pending,N/A,Medium,Minor,UI,Unexecuted,"Chrome, Safari, iOS, Android",Standard Case
+TC_HOME_110,Homepage,Featured Products,Verify product cards UI - Test max allowed string length,On Homepage,"1. Scroll to featured
+- Input string of 255 chars",System handles limit gracefully,Pending,N/A,Medium,Minor,Boundary,Unexecuted,Varies,Boundary Variation
+TC_HOME_111,Homepage,Featured Products,Verify product cards UI - Test empty required fields,On Homepage,"1. Scroll to featured
+- Submit without required data",Validation errors highlight fields,Pending,N/A,Medium,Minor,Negative,Unexecuted,Varies,Negative Variation
+TC_HOME_112,Homepage,Featured Products,Verify product cards UI - Test on Firefox,On Homepage,"1. Scroll to featured
+- Perform action on Firefox browser",UI functions identically to Chrome,Pending,N/A,Medium,Minor,Cross-Browser,Unexecuted,Varies,Cross-Browser Variation
+TC_HOME_113,Homepage,Featured Products,Verify product cards UI - Test on small viewport (320px),On Homepage,"1. Scroll to featured
+- Resize window to 320px and perform action",UI adjusts without overflow,Pending,N/A,Medium,Minor,Mobile,Unexecuted,Varies,Mobile Variation
+TC_HOME_114,Homepage,Featured Products,Verify product cards UI - Simulate page refresh during action,On Homepage,"1. Scroll to featured
+- Hit F5 mid-process",State is recovered or fails safely,Pending,N/A,Medium,Minor,Interrupt,Unexecuted,Varies,Interrupt Variation
+TC_HOME_115,Homepage,Footer Links,Verify policy links,On Homepage,"1. Click T&C, Privacy",Pages load correctly,Pending,N/A,Medium,Minor,Functional,Unexecuted,"Chrome, Safari, iOS, Android",Standard Case
+TC_HOME_116,Homepage,Footer Links,Verify policy links - Test max allowed string length,On Homepage,"1. Click T&C, Privacy
+- Input string of 255 chars",System handles limit gracefully,Pending,N/A,Medium,Minor,Boundary,Unexecuted,Varies,Boundary Variation
+TC_HOME_117,Homepage,Footer Links,Verify policy links - Test empty required fields,On Homepage,"1. Click T&C, Privacy
+- Submit without required data",Validation errors highlight fields,Pending,N/A,Medium,Minor,Negative,Unexecuted,Varies,Negative Variation
+TC_HOME_118,Homepage,Footer Links,Verify policy links - Test on Firefox,On Homepage,"1. Click T&C, Privacy
+- Perform action on Firefox browser",UI functions identically to Chrome,Pending,N/A,Medium,Minor,Cross-Browser,Unexecuted,Varies,Cross-Browser Variation
+TC_HOME_119,Homepage,Footer Links,Verify policy links - Test on small viewport (320px),On Homepage,"1. Click T&C, Privacy
+- Resize window to 320px and perform action",UI adjusts without overflow,Pending,N/A,Medium,Minor,Mobile,Unexecuted,Varies,Mobile Variation
+TC_HOME_120,Homepage,Footer Links,Verify policy links - Simulate page refresh during action,On Homepage,"1. Click T&C, Privacy
+- Hit F5 mid-process",State is recovered or fails safely,Pending,N/A,Medium,Minor,Interrupt,Unexecuted,Varies,Interrupt Variation
+TC_PROD_121,Product Module,Product Listing,Verify grid/list view toggle,On PLP,1. Click List view,Layout changes to list,Pending,N/A,Medium,Minor,UI,Unexecuted,"Chrome, Safari, iOS, Android",Standard Case
+TC_PROD_122,Product Module,Product Listing,Verify grid/list view toggle - Test max allowed string length,On PLP,"1. Click List view
+- Input string of 255 chars",System handles limit gracefully,Pending,N/A,Medium,Minor,Boundary,Unexecuted,Varies,Boundary Variation
+TC_PROD_123,Product Module,Product Listing,Verify grid/list view toggle - Test empty required fields,On PLP,"1. Click List view
+- Submit without required data",Validation errors highlight fields,Pending,N/A,Medium,Minor,Negative,Unexecuted,Varies,Negative Variation
+TC_PROD_124,Product Module,Product Listing,Verify grid/list view toggle - Test on Firefox,On PLP,"1. Click List view
+- Perform action on Firefox browser",UI functions identically to Chrome,Pending,N/A,Medium,Minor,Cross-Browser,Unexecuted,Varies,Cross-Browser Variation
+TC_PROD_125,Product Module,Product Listing,Verify grid/list view toggle - Test on small viewport (320px),On PLP,"1. Click List view
+- Resize window to 320px and perform action",UI adjusts without overflow,Pending,N/A,Medium,Minor,Mobile,Unexecuted,Varies,Mobile Variation
+TC_PROD_126,Product Module,Product Listing,Verify grid/list view toggle - Simulate page refresh during action,On PLP,"1. Click List view
+- Hit F5 mid-process",State is recovered or fails safely,Pending,N/A,Medium,Minor,Interrupt,Unexecuted,Varies,Interrupt Variation
+TC_PROD_127,Product Module,Product Listing,Verify pagination,On PLP > 20 items,1. Click Page 2,Next 20 items load,Pending,N/A,High,Major,Functional,Unexecuted,"Chrome, Safari, iOS, Android",Standard Case
+TC_PROD_128,Product Module,Product Listing,Verify pagination - Test max allowed string length,On PLP > 20 items,"1. Click Page 2
+- Input string of 255 chars",System handles limit gracefully,Pending,N/A,Medium,Minor,Boundary,Unexecuted,Varies,Boundary Variation
+TC_PROD_129,Product Module,Product Listing,Verify pagination - Test empty required fields,On PLP > 20 items,"1. Click Page 2
+- Submit without required data",Validation errors highlight fields,Pending,N/A,Medium,Minor,Negative,Unexecuted,Varies,Negative Variation
+TC_PROD_130,Product Module,Product Listing,Verify pagination - Test on Firefox,On PLP > 20 items,"1. Click Page 2
+- Perform action on Firefox browser",UI functions identically to Chrome,Pending,N/A,Medium,Minor,Cross-Browser,Unexecuted,Varies,Cross-Browser Variation
+TC_PROD_131,Product Module,Product Listing,Verify pagination - Test on small viewport (320px),On PLP > 20 items,"1. Click Page 2
+- Resize window to 320px and perform action",UI adjusts without overflow,Pending,N/A,Medium,Minor,Mobile,Unexecuted,Varies,Mobile Variation
+TC_PROD_132,Product Module,Product Listing,Verify pagination - Simulate page refresh during action,On PLP > 20 items,"1. Click Page 2
+- Hit F5 mid-process",State is recovered or fails safely,Pending,N/A,Medium,Minor,Interrupt,Unexecuted,Varies,Interrupt Variation
+TC_PROD_133,Product Module,Product Variants,Verify color selection,On PDP with variants,1. Select Red color,Image updates to Red,Pending,Color: Red,High,Major,Functional,Unexecuted,"Chrome, Safari, iOS, Android",Standard Case
+TC_PROD_134,Product Module,Product Variants,Verify color selection - Test max allowed string length,On PDP with variants,"1. Select Red color
+- Input string of 255 chars",System handles limit gracefully,Pending,Color: Red,Medium,Minor,Boundary,Unexecuted,Varies,Boundary Variation
+TC_PROD_135,Product Module,Product Variants,Verify color selection - Test empty required fields,On PDP with variants,"1. Select Red color
+- Submit without required data",Validation errors highlight fields,Pending,Color: Red,Medium,Minor,Negative,Unexecuted,Varies,Negative Variation
+TC_PROD_136,Product Module,Product Variants,Verify color selection - Test on Firefox,On PDP with variants,"1. Select Red color
+- Perform action on Firefox browser",UI functions identically to Chrome,Pending,Color: Red,Medium,Minor,Cross-Browser,Unexecuted,Varies,Cross-Browser Variation
+TC_PROD_137,Product Module,Product Variants,Verify color selection - Test on small viewport (320px),On PDP with variants,"1. Select Red color
+- Resize window to 320px and perform action",UI adjusts without overflow,Pending,Color: Red,Medium,Minor,Mobile,Unexecuted,Varies,Mobile Variation
+TC_PROD_138,Product Module,Product Variants,Verify color selection - Simulate page refresh during action,On PDP with variants,"1. Select Red color
+- Hit F5 mid-process",State is recovered or fails safely,Pending,Color: Red,Medium,Minor,Interrupt,Unexecuted,Varies,Interrupt Variation
+TC_PROD_139,Product Module,Product Variants,Verify size selection,On PDP with variants,1. Select Size L,Price/Stock updates if applicable,Pending,Size: L,High,Major,Functional,Unexecuted,"Chrome, Safari, iOS, Android",Standard Case
+TC_PROD_140,Product Module,Product Variants,Verify size selection - Test max allowed string length,On PDP with variants,"1. Select Size L
+- Input string of 255 chars",System handles limit gracefully,Pending,Size: L,Medium,Minor,Boundary,Unexecuted,Varies,Boundary Variation
+TC_PROD_141,Product Module,Product Variants,Verify size selection - Test empty required fields,On PDP with variants,"1. Select Size L
+- Submit without required data",Validation errors highlight fields,Pending,Size: L,Medium,Minor,Negative,Unexecuted,Varies,Negative Variation
+TC_PROD_142,Product Module,Product Variants,Verify size selection - Test on Firefox,On PDP with variants,"1. Select Size L
+- Perform action on Firefox browser",UI functions identically to Chrome,Pending,Size: L,Medium,Minor,Cross-Browser,Unexecuted,Varies,Cross-Browser Variation
+TC_PROD_143,Product Module,Product Variants,Verify size selection - Test on small viewport (320px),On PDP with variants,"1. Select Size L
+- Resize window to 320px and perform action",UI adjusts without overflow,Pending,Size: L,Medium,Minor,Mobile,Unexecuted,Varies,Mobile Variation
+TC_PROD_144,Product Module,Product Variants,Verify size selection - Simulate page refresh during action,On PDP with variants,"1. Select Size L
+- Hit F5 mid-process",State is recovered or fails safely,Pending,Size: L,Medium,Minor,Interrupt,Unexecuted,Varies,Interrupt Variation
+TC_PROD_145,Product Module,Product Images,Verify image gallery thumbnails,On PDP,1. Click thumbnail,Main image updates,Pending,N/A,Medium,Minor,UI,Unexecuted,"Chrome, Safari, iOS, Android",Standard Case
+TC_PROD_146,Product Module,Product Images,Verify image gallery thumbnails - Test max allowed string length,On PDP,"1. Click thumbnail
+- Input string of 255 chars",System handles limit gracefully,Pending,N/A,Medium,Minor,Boundary,Unexecuted,Varies,Boundary Variation
+TC_PROD_147,Product Module,Product Images,Verify image gallery thumbnails - Test empty required fields,On PDP,"1. Click thumbnail
+- Submit without required data",Validation errors highlight fields,Pending,N/A,Medium,Minor,Negative,Unexecuted,Varies,Negative Variation
+TC_PROD_148,Product Module,Product Images,Verify image gallery thumbnails - Test on Firefox,On PDP,"1. Click thumbnail
+- Perform action on Firefox browser",UI functions identically to Chrome,Pending,N/A,Medium,Minor,Cross-Browser,Unexecuted,Varies,Cross-Browser Variation
+TC_PROD_149,Product Module,Product Images,Verify image gallery thumbnails - Test on small viewport (320px),On PDP,"1. Click thumbnail
+- Resize window to 320px and perform action",UI adjusts without overflow,Pending,N/A,Medium,Minor,Mobile,Unexecuted,Varies,Mobile Variation
+TC_PROD_150,Product Module,Product Images,Verify image gallery thumbnails - Simulate page refresh during action,On PDP,"1. Click thumbnail
+- Hit F5 mid-process",State is recovered or fails safely,Pending,N/A,Medium,Minor,Interrupt,Unexecuted,Varies,Interrupt Variation
+TC_PROD_151,Product Module,Product Zoom,Verify hover zoom,On PDP (Desktop),1. Hover over main image,Magnified view appears,Pending,N/A,Medium,Minor,UI,Unexecuted,"Chrome, Safari, iOS, Android",Standard Case
+TC_PROD_152,Product Module,Product Zoom,Verify hover zoom - Test max allowed string length,On PDP (Desktop),"1. Hover over main image
+- Input string of 255 chars",System handles limit gracefully,Pending,N/A,Medium,Minor,Boundary,Unexecuted,Varies,Boundary Variation
+TC_PROD_153,Product Module,Product Zoom,Verify hover zoom - Test empty required fields,On PDP (Desktop),"1. Hover over main image
+- Submit without required data",Validation errors highlight fields,Pending,N/A,Medium,Minor,Negative,Unexecuted,Varies,Negative Variation
+TC_PROD_154,Product Module,Product Zoom,Verify hover zoom - Test on Firefox,On PDP (Desktop),"1. Hover over main image
+- Perform action on Firefox browser",UI functions identically to Chrome,Pending,N/A,Medium,Minor,Cross-Browser,Unexecuted,Varies,Cross-Browser Variation
+TC_PROD_155,Product Module,Product Zoom,Verify hover zoom - Test on small viewport (320px),On PDP (Desktop),"1. Hover over main image
+- Resize window to 320px and perform action",UI adjusts without overflow,Pending,N/A,Medium,Minor,Mobile,Unexecuted,Varies,Mobile Variation
+TC_PROD_156,Product Module,Product Zoom,Verify hover zoom - Simulate page refresh during action,On PDP (Desktop),"1. Hover over main image
+- Hit F5 mid-process",State is recovered or fails safely,Pending,N/A,Medium,Minor,Interrupt,Unexecuted,Varies,Interrupt Variation
+TC_PROD_157,Product Module,Product Reviews,Verify adding review,Logged in user,"1. Give 5 stars
+2. Write text
+3. Submit",Review added successfully,Pending,"5 stars, 'Great!'",Medium,Major,Functional,Unexecuted,"Chrome, Safari, iOS, Android",Standard Case
+TC_PROD_158,Product Module,Product Reviews,Verify adding review - Test max allowed string length,Logged in user,"1. Give 5 stars
+2. Write text
+3. Submit
+- Input string of 255 chars",System handles limit gracefully,Pending,"5 stars, 'Great!'",Medium,Minor,Boundary,Unexecuted,Varies,Boundary Variation
+TC_PROD_159,Product Module,Product Reviews,Verify adding review - Test empty required fields,Logged in user,"1. Give 5 stars
+2. Write text
+3. Submit
+- Submit without required data",Validation errors highlight fields,Pending,"5 stars, 'Great!'",Medium,Minor,Negative,Unexecuted,Varies,Negative Variation
+TC_PROD_160,Product Module,Product Reviews,Verify adding review - Test on Firefox,Logged in user,"1. Give 5 stars
+2. Write text
+3. Submit
+- Perform action on Firefox browser",UI functions identically to Chrome,Pending,"5 stars, 'Great!'",Medium,Minor,Cross-Browser,Unexecuted,Varies,Cross-Browser Variation
+TC_PROD_161,Product Module,Product Reviews,Verify adding review - Test on small viewport (320px),Logged in user,"1. Give 5 stars
+2. Write text
+3. Submit
+- Resize window to 320px and perform action",UI adjusts without overflow,Pending,"5 stars, 'Great!'",Medium,Minor,Mobile,Unexecuted,Varies,Mobile Variation
+TC_PROD_162,Product Module,Product Reviews,Verify adding review - Simulate page refresh during action,Logged in user,"1. Give 5 stars
+2. Write text
+3. Submit
+- Hit F5 mid-process",State is recovered or fails safely,Pending,"5 stars, 'Great!'",Medium,Minor,Interrupt,Unexecuted,Varies,Interrupt Variation
+TC_PROD_163,Product Module,Inventory,Verify Out of Stock UI,OOS Product,1. Visit PDP,"Add to Cart disabled, 'Out of Stock' shown",Pending,OOS Item,High,Critical,Functional,Unexecuted,"Chrome, Safari, iOS, Android",Standard Case
+TC_PROD_164,Product Module,Inventory,Verify Out of Stock UI - Test max allowed string length,OOS Product,"1. Visit PDP
+- Input string of 255 chars",System handles limit gracefully,Pending,OOS Item,Medium,Minor,Boundary,Unexecuted,Varies,Boundary Variation
+TC_PROD_165,Product Module,Inventory,Verify Out of Stock UI - Test empty required fields,OOS Product,"1. Visit PDP
+- Submit without required data",Validation errors highlight fields,Pending,OOS Item,Medium,Minor,Negative,Unexecuted,Varies,Negative Variation
+TC_PROD_166,Product Module,Inventory,Verify Out of Stock UI - Test on Firefox,OOS Product,"1. Visit PDP
+- Perform action on Firefox browser",UI functions identically to Chrome,Pending,OOS Item,Medium,Minor,Cross-Browser,Unexecuted,Varies,Cross-Browser Variation
+TC_PROD_167,Product Module,Inventory,Verify Out of Stock UI - Test on small viewport (320px),OOS Product,"1. Visit PDP
+- Resize window to 320px and perform action",UI adjusts without overflow,Pending,OOS Item,Medium,Minor,Mobile,Unexecuted,Varies,Mobile Variation
+TC_PROD_168,Product Module,Inventory,Verify Out of Stock UI - Simulate page refresh during action,OOS Product,"1. Visit PDP
+- Hit F5 mid-process",State is recovered or fails safely,Pending,OOS Item,Medium,Minor,Interrupt,Unexecuted,Varies,Interrupt Variation
+TC_PROD_169,Product Module,Inventory,Verify max quantity limit,In Stock Product,"1. Enter qty > stock
+2. Add to cart",Error: Insufficient stock,Pending,Qty: 999,High,Major,Boundary,Unexecuted,"Chrome, Safari, iOS, Android",Standard Case
+TC_PROD_170,Product Module,Inventory,Verify max quantity limit - Test max allowed string length,In Stock Product,"1. Enter qty > stock
+2. Add to cart
+- Input string of 255 chars",System handles limit gracefully,Pending,Qty: 999,Medium,Minor,Boundary,Unexecuted,Varies,Boundary Variation
+TC_PROD_171,Product Module,Inventory,Verify max quantity limit - Test empty required fields,In Stock Product,"1. Enter qty > stock
+2. Add to cart
+- Submit without required data",Validation errors highlight fields,Pending,Qty: 999,Medium,Minor,Negative,Unexecuted,Varies,Negative Variation
+TC_PROD_172,Product Module,Inventory,Verify max quantity limit - Test on Firefox,In Stock Product,"1. Enter qty > stock
+2. Add to cart
+- Perform action on Firefox browser",UI functions identically to Chrome,Pending,Qty: 999,Medium,Minor,Cross-Browser,Unexecuted,Varies,Cross-Browser Variation
+TC_PROD_173,Product Module,Inventory,Verify max quantity limit - Test on small viewport (320px),In Stock Product,"1. Enter qty > stock
+2. Add to cart
+- Resize window to 320px and perform action",UI adjusts without overflow,Pending,Qty: 999,Medium,Minor,Mobile,Unexecuted,Varies,Mobile Variation
+TC_PROD_174,Product Module,Inventory,Verify max quantity limit - Simulate page refresh during action,In Stock Product,"1. Enter qty > stock
+2. Add to cart
+- Hit F5 mid-process",State is recovered or fails safely,Pending,Qty: 999,Medium,Minor,Interrupt,Unexecuted,Varies,Interrupt Variation
+TC_SRCH_175,Search & Filters,Keyword Search,Verify exact match search,On any page,"1. Type exact name
+2. Enter",Exact product appears first,Pending,Exact Prod Name,High,Critical,Functional,Unexecuted,"Chrome, Safari, iOS, Android",Standard Case
+TC_SRCH_176,Search & Filters,Keyword Search,Verify exact match search - Test max allowed string length,On any page,"1. Type exact name
+2. Enter
+- Input string of 255 chars",System handles limit gracefully,Pending,Exact Prod Name,Medium,Minor,Boundary,Unexecuted,Varies,Boundary Variation
+TC_SRCH_177,Search & Filters,Keyword Search,Verify exact match search - Test empty required fields,On any page,"1. Type exact name
+2. Enter
+- Submit without required data",Validation errors highlight fields,Pending,Exact Prod Name,Medium,Minor,Negative,Unexecuted,Varies,Negative Variation
+TC_SRCH_178,Search & Filters,Keyword Search,Verify exact match search - Test on Firefox,On any page,"1. Type exact name
+2. Enter
+- Perform action on Firefox browser",UI functions identically to Chrome,Pending,Exact Prod Name,Medium,Minor,Cross-Browser,Unexecuted,Varies,Cross-Browser Variation
+TC_SRCH_179,Search & Filters,Keyword Search,Verify exact match search - Test on small viewport (320px),On any page,"1. Type exact name
+2. Enter
+- Resize window to 320px and perform action",UI adjusts without overflow,Pending,Exact Prod Name,Medium,Minor,Mobile,Unexecuted,Varies,Mobile Variation
+TC_SRCH_180,Search & Filters,Keyword Search,Verify exact match search - Simulate page refresh during action,On any page,"1. Type exact name
+2. Enter
+- Hit F5 mid-process",State is recovered or fails safely,Pending,Exact Prod Name,Medium,Minor,Interrupt,Unexecuted,Varies,Interrupt Variation
+TC_SRCH_181,Search & Filters,Keyword Search,Verify typo tolerance,On any page,"1. Type name with 1 typo
+2. Enter",Correct product still appears,Pending,Typo string,Medium,Major,Functional,Unexecuted,"Chrome, Safari, iOS, Android",Standard Case
+TC_SRCH_182,Search & Filters,Keyword Search,Verify typo tolerance - Test max allowed string length,On any page,"1. Type name with 1 typo
+2. Enter
+- Input string of 255 chars",System handles limit gracefully,Pending,Typo string,Medium,Minor,Boundary,Unexecuted,Varies,Boundary Variation
+TC_SRCH_183,Search & Filters,Keyword Search,Verify typo tolerance - Test empty required fields,On any page,"1. Type name with 1 typo
+2. Enter
+- Submit without required data",Validation errors highlight fields,Pending,Typo string,Medium,Minor,Negative,Unexecuted,Varies,Negative Variation
+TC_SRCH_184,Search & Filters,Keyword Search,Verify typo tolerance - Test on Firefox,On any page,"1. Type name with 1 typo
+2. Enter
+- Perform action on Firefox browser",UI functions identically to Chrome,Pending,Typo string,Medium,Minor,Cross-Browser,Unexecuted,Varies,Cross-Browser Variation
+TC_SRCH_185,Search & Filters,Keyword Search,Verify typo tolerance - Test on small viewport (320px),On any page,"1. Type name with 1 typo
+2. Enter
+- Resize window to 320px and perform action",UI adjusts without overflow,Pending,Typo string,Medium,Minor,Mobile,Unexecuted,Varies,Mobile Variation
+TC_SRCH_186,Search & Filters,Keyword Search,Verify typo tolerance - Simulate page refresh during action,On any page,"1. Type name with 1 typo
+2. Enter
+- Hit F5 mid-process",State is recovered or fails safely,Pending,Typo string,Medium,Minor,Interrupt,Unexecuted,Varies,Interrupt Variation
+TC_SRCH_187,Search & Filters,Auto Suggestions,Verify dropdown suggestions,On any page,1. Type 3 letters,Dropdown shows matches,Pending,'Shi',Medium,Minor,UI/API,Unexecuted,"Chrome, Safari, iOS, Android",Standard Case
+TC_SRCH_188,Search & Filters,Auto Suggestions,Verify dropdown suggestions - Test max allowed string length,On any page,"1. Type 3 letters
+- Input string of 255 chars",System handles limit gracefully,Pending,'Shi',Medium,Minor,Boundary,Unexecuted,Varies,Boundary Variation
+TC_SRCH_189,Search & Filters,Auto Suggestions,Verify dropdown suggestions - Test empty required fields,On any page,"1. Type 3 letters
+- Submit without required data",Validation errors highlight fields,Pending,'Shi',Medium,Minor,Negative,Unexecuted,Varies,Negative Variation
+TC_SRCH_190,Search & Filters,Auto Suggestions,Verify dropdown suggestions - Test on Firefox,On any page,"1. Type 3 letters
+- Perform action on Firefox browser",UI functions identically to Chrome,Pending,'Shi',Medium,Minor,Cross-Browser,Unexecuted,Varies,Cross-Browser Variation
+TC_SRCH_191,Search & Filters,Auto Suggestions,Verify dropdown suggestions - Test on small viewport (320px),On any page,"1. Type 3 letters
+- Resize window to 320px and perform action",UI adjusts without overflow,Pending,'Shi',Medium,Minor,Mobile,Unexecuted,Varies,Mobile Variation
+TC_SRCH_192,Search & Filters,Auto Suggestions,Verify dropdown suggestions - Simulate page refresh during action,On any page,"1. Type 3 letters
+- Hit F5 mid-process",State is recovered or fails safely,Pending,'Shi',Medium,Minor,Interrupt,Unexecuted,Varies,Interrupt Variation
+TC_SRCH_193,Search & Filters,Category Filters,Verify category selection,On PLP,1. Select 'Electronics',Only electronics shown,Pending,Category ID,High,Major,Functional,Unexecuted,"Chrome, Safari, iOS, Android",Standard Case
+TC_SRCH_194,Search & Filters,Category Filters,Verify category selection - Test max allowed string length,On PLP,"1. Select 'Electronics'
+- Input string of 255 chars",System handles limit gracefully,Pending,Category ID,Medium,Minor,Boundary,Unexecuted,Varies,Boundary Variation
+TC_SRCH_195,Search & Filters,Category Filters,Verify category selection - Test empty required fields,On PLP,"1. Select 'Electronics'
+- Submit without required data",Validation errors highlight fields,Pending,Category ID,Medium,Minor,Negative,Unexecuted,Varies,Negative Variation
+TC_SRCH_196,Search & Filters,Category Filters,Verify category selection - Test on Firefox,On PLP,"1. Select 'Electronics'
+- Perform action on Firefox browser",UI functions identically to Chrome,Pending,Category ID,Medium,Minor,Cross-Browser,Unexecuted,Varies,Cross-Browser Variation
+TC_SRCH_197,Search & Filters,Category Filters,Verify category selection - Test on small viewport (320px),On PLP,"1. Select 'Electronics'
+- Resize window to 320px and perform action",UI adjusts without overflow,Pending,Category ID,Medium,Minor,Mobile,Unexecuted,Varies,Mobile Variation
+TC_SRCH_198,Search & Filters,Category Filters,Verify category selection - Simulate page refresh during action,On PLP,"1. Select 'Electronics'
+- Hit F5 mid-process",State is recovered or fails safely,Pending,Category ID,Medium,Minor,Interrupt,Unexecuted,Varies,Interrupt Variation
+TC_SRCH_199,Search & Filters,Price Filters,Verify price range slider,On PLP,1. Set range $50-$100,Only items $50-$100 shown,Pending,"Min:50, Max:100",High,Major,Functional,Unexecuted,"Chrome, Safari, iOS, Android",Standard Case
+TC_SRCH_200,Search & Filters,Price Filters,Verify price range slider - Test max allowed string length,On PLP,"1. Set range $50-$100
+- Input string of 255 chars",System handles limit gracefully,Pending,"Min:50, Max:100",Medium,Minor,Boundary,Unexecuted,Varies,Boundary Variation
+TC_SRCH_201,Search & Filters,Price Filters,Verify price range slider - Test empty required fields,On PLP,"1. Set range $50-$100
+- Submit without required data",Validation errors highlight fields,Pending,"Min:50, Max:100",Medium,Minor,Negative,Unexecuted,Varies,Negative Variation
+TC_SRCH_202,Search & Filters,Price Filters,Verify price range slider - Test on Firefox,On PLP,"1. Set range $50-$100
+- Perform action on Firefox browser",UI functions identically to Chrome,Pending,"Min:50, Max:100",Medium,Minor,Cross-Browser,Unexecuted,Varies,Cross-Browser Variation
+TC_SRCH_203,Search & Filters,Price Filters,Verify price range slider - Test on small viewport (320px),On PLP,"1. Set range $50-$100
+- Resize window to 320px and perform action",UI adjusts without overflow,Pending,"Min:50, Max:100",Medium,Minor,Mobile,Unexecuted,Varies,Mobile Variation
+TC_SRCH_204,Search & Filters,Price Filters,Verify price range slider - Simulate page refresh during action,On PLP,"1. Set range $50-$100
+- Hit F5 mid-process",State is recovered or fails safely,Pending,"Min:50, Max:100",Medium,Minor,Interrupt,Unexecuted,Varies,Interrupt Variation
+TC_SRCH_205,Search & Filters,Sorting,Verify Price Low to High,On PLP,1. Sort Low to High,Items sorted ascending price,Pending,N/A,High,Major,Functional,Unexecuted,"Chrome, Safari, iOS, Android",Standard Case
+TC_SRCH_206,Search & Filters,Sorting,Verify Price Low to High - Test max allowed string length,On PLP,"1. Sort Low to High
+- Input string of 255 chars",System handles limit gracefully,Pending,N/A,Medium,Minor,Boundary,Unexecuted,Varies,Boundary Variation
+TC_SRCH_207,Search & Filters,Sorting,Verify Price Low to High - Test empty required fields,On PLP,"1. Sort Low to High
+- Submit without required data",Validation errors highlight fields,Pending,N/A,Medium,Minor,Negative,Unexecuted,Varies,Negative Variation
+TC_SRCH_208,Search & Filters,Sorting,Verify Price Low to High - Test on Firefox,On PLP,"1. Sort Low to High
+- Perform action on Firefox browser",UI functions identically to Chrome,Pending,N/A,Medium,Minor,Cross-Browser,Unexecuted,Varies,Cross-Browser Variation
+TC_SRCH_209,Search & Filters,Sorting,Verify Price Low to High - Test on small viewport (320px),On PLP,"1. Sort Low to High
+- Resize window to 320px and perform action",UI adjusts without overflow,Pending,N/A,Medium,Minor,Mobile,Unexecuted,Varies,Mobile Variation
+TC_SRCH_210,Search & Filters,Sorting,Verify Price Low to High - Simulate page refresh during action,On PLP,"1. Sort Low to High
+- Hit F5 mid-process",State is recovered or fails safely,Pending,N/A,Medium,Minor,Interrupt,Unexecuted,Varies,Interrupt Variation
+TC_CART_211,Cart Module,Add to Cart,Verify adding single item,On PDP,1. Click Add to Cart,Cart counter increments by 1,Pending,Item X,High,Critical,Functional,Unexecuted,"Chrome, Safari, iOS, Android",Standard Case
+TC_CART_212,Cart Module,Add to Cart,Verify adding single item - Test max allowed string length,On PDP,"1. Click Add to Cart
+- Input string of 255 chars",System handles limit gracefully,Pending,Item X,Medium,Minor,Boundary,Unexecuted,Varies,Boundary Variation
+TC_CART_213,Cart Module,Add to Cart,Verify adding single item - Test empty required fields,On PDP,"1. Click Add to Cart
+- Submit without required data",Validation errors highlight fields,Pending,Item X,Medium,Minor,Negative,Unexecuted,Varies,Negative Variation
+TC_CART_214,Cart Module,Add to Cart,Verify adding single item - Test on Firefox,On PDP,"1. Click Add to Cart
+- Perform action on Firefox browser",UI functions identically to Chrome,Pending,Item X,Medium,Minor,Cross-Browser,Unexecuted,Varies,Cross-Browser Variation
+TC_CART_215,Cart Module,Add to Cart,Verify adding single item - Test on small viewport (320px),On PDP,"1. Click Add to Cart
+- Resize window to 320px and perform action",UI adjusts without overflow,Pending,Item X,Medium,Minor,Mobile,Unexecuted,Varies,Mobile Variation
+TC_CART_216,Cart Module,Add to Cart,Verify adding single item - Simulate page refresh during action,On PDP,"1. Click Add to Cart
+- Hit F5 mid-process",State is recovered or fails safely,Pending,Item X,Medium,Minor,Interrupt,Unexecuted,Varies,Interrupt Variation
+TC_CART_217,Cart Module,Update Quantity,Verify increasing qty,In Cart,1. Click + on item,"Qty increases, total updates",Pending,N/A,High,Major,Functional,Unexecuted,"Chrome, Safari, iOS, Android",Standard Case
+TC_CART_218,Cart Module,Update Quantity,Verify increasing qty - Test max allowed string length,In Cart,"1. Click + on item
+- Input string of 255 chars",System handles limit gracefully,Pending,N/A,Medium,Minor,Boundary,Unexecuted,Varies,Boundary Variation
+TC_CART_219,Cart Module,Update Quantity,Verify increasing qty - Test empty required fields,In Cart,"1. Click + on item
+- Submit without required data",Validation errors highlight fields,Pending,N/A,Medium,Minor,Negative,Unexecuted,Varies,Negative Variation
+TC_CART_220,Cart Module,Update Quantity,Verify increasing qty - Test on Firefox,In Cart,"1. Click + on item
+- Perform action on Firefox browser",UI functions identically to Chrome,Pending,N/A,Medium,Minor,Cross-Browser,Unexecuted,Varies,Cross-Browser Variation
+TC_CART_221,Cart Module,Update Quantity,Verify increasing qty - Test on small viewport (320px),In Cart,"1. Click + on item
+- Resize window to 320px and perform action",UI adjusts without overflow,Pending,N/A,Medium,Minor,Mobile,Unexecuted,Varies,Mobile Variation
+TC_CART_222,Cart Module,Update Quantity,Verify increasing qty - Simulate page refresh during action,In Cart,"1. Click + on item
+- Hit F5 mid-process",State is recovered or fails safely,Pending,N/A,Medium,Minor,Interrupt,Unexecuted,Varies,Interrupt Variation
+TC_CART_223,Cart Module,Remove Product,Verify removing item,In Cart,1. Click trash icon,"Item removed, total updates",Pending,N/A,High,Major,Functional,Unexecuted,"Chrome, Safari, iOS, Android",Standard Case
+TC_CART_224,Cart Module,Remove Product,Verify removing item - Test max allowed string length,In Cart,"1. Click trash icon
+- Input string of 255 chars",System handles limit gracefully,Pending,N/A,Medium,Minor,Boundary,Unexecuted,Varies,Boundary Variation
+TC_CART_225,Cart Module,Remove Product,Verify removing item - Test empty required fields,In Cart,"1. Click trash icon
+- Submit without required data",Validation errors highlight fields,Pending,N/A,Medium,Minor,Negative,Unexecuted,Varies,Negative Variation
+TC_CART_226,Cart Module,Remove Product,Verify removing item - Test on Firefox,In Cart,"1. Click trash icon
+- Perform action on Firefox browser",UI functions identically to Chrome,Pending,N/A,Medium,Minor,Cross-Browser,Unexecuted,Varies,Cross-Browser Variation
+TC_CART_227,Cart Module,Remove Product,Verify removing item - Test on small viewport (320px),In Cart,"1. Click trash icon
+- Resize window to 320px and perform action",UI adjusts without overflow,Pending,N/A,Medium,Minor,Mobile,Unexecuted,Varies,Mobile Variation
+TC_CART_228,Cart Module,Remove Product,Verify removing item - Simulate page refresh during action,In Cart,"1. Click trash icon
+- Hit F5 mid-process",State is recovered or fails safely,Pending,N/A,Medium,Minor,Interrupt,Unexecuted,Varies,Interrupt Variation
+TC_CART_229,Cart Module,Cart Persistence,Verify cart after reload,Item in Cart,1. Refresh page,Item remains in cart,Pending,N/A,High,Major,Functional,Unexecuted,"Chrome, Safari, iOS, Android",Standard Case
+TC_CART_230,Cart Module,Cart Persistence,Verify cart after reload - Test max allowed string length,Item in Cart,"1. Refresh page
+- Input string of 255 chars",System handles limit gracefully,Pending,N/A,Medium,Minor,Boundary,Unexecuted,Varies,Boundary Variation
+TC_CART_231,Cart Module,Cart Persistence,Verify cart after reload - Test empty required fields,Item in Cart,"1. Refresh page
+- Submit without required data",Validation errors highlight fields,Pending,N/A,Medium,Minor,Negative,Unexecuted,Varies,Negative Variation
+TC_CART_232,Cart Module,Cart Persistence,Verify cart after reload - Test on Firefox,Item in Cart,"1. Refresh page
+- Perform action on Firefox browser",UI functions identically to Chrome,Pending,N/A,Medium,Minor,Cross-Browser,Unexecuted,Varies,Cross-Browser Variation
+TC_CART_233,Cart Module,Cart Persistence,Verify cart after reload - Test on small viewport (320px),Item in Cart,"1. Refresh page
+- Resize window to 320px and perform action",UI adjusts without overflow,Pending,N/A,Medium,Minor,Mobile,Unexecuted,Varies,Mobile Variation
+TC_CART_234,Cart Module,Cart Persistence,Verify cart after reload - Simulate page refresh during action,Item in Cart,"1. Refresh page
+- Hit F5 mid-process",State is recovered or fails safely,Pending,N/A,Medium,Minor,Interrupt,Unexecuted,Varies,Interrupt Variation
+TC_CART_235,Cart Module,Save for Later,Verify move to SFL,In Cart,1. Click Save for Later,Item moves to SFL section,Pending,N/A,Medium,Minor,Functional,Unexecuted,"Chrome, Safari, iOS, Android",Standard Case
+TC_CART_236,Cart Module,Save for Later,Verify move to SFL - Test max allowed string length,In Cart,"1. Click Save for Later
+- Input string of 255 chars",System handles limit gracefully,Pending,N/A,Medium,Minor,Boundary,Unexecuted,Varies,Boundary Variation
+TC_CART_237,Cart Module,Save for Later,Verify move to SFL - Test empty required fields,In Cart,"1. Click Save for Later
+- Submit without required data",Validation errors highlight fields,Pending,N/A,Medium,Minor,Negative,Unexecuted,Varies,Negative Variation
+TC_CART_238,Cart Module,Save for Later,Verify move to SFL - Test on Firefox,In Cart,"1. Click Save for Later
+- Perform action on Firefox browser",UI functions identically to Chrome,Pending,N/A,Medium,Minor,Cross-Browser,Unexecuted,Varies,Cross-Browser Variation
+TC_CART_239,Cart Module,Save for Later,Verify move to SFL - Test on small viewport (320px),In Cart,"1. Click Save for Later
+- Resize window to 320px and perform action",UI adjusts without overflow,Pending,N/A,Medium,Minor,Mobile,Unexecuted,Varies,Mobile Variation
+TC_CART_240,Cart Module,Save for Later,Verify move to SFL - Simulate page refresh during action,In Cart,"1. Click Save for Later
+- Hit F5 mid-process",State is recovered or fails safely,Pending,N/A,Medium,Minor,Interrupt,Unexecuted,Varies,Interrupt Variation
+TC_WISH_241,Wishlist,Add Wishlist,Verify adding from PLP,Logged in,1. Click heart icon,"Added to wishlist, icon active",Pending,N/A,Medium,Minor,Functional,Unexecuted,"Chrome, Safari, iOS, Android",Standard Case
+TC_WISH_242,Wishlist,Add Wishlist,Verify adding from PLP - Test max allowed string length,Logged in,"1. Click heart icon
+- Input string of 255 chars",System handles limit gracefully,Pending,N/A,Medium,Minor,Boundary,Unexecuted,Varies,Boundary Variation
+TC_WISH_243,Wishlist,Add Wishlist,Verify adding from PLP - Test empty required fields,Logged in,"1. Click heart icon
+- Submit without required data",Validation errors highlight fields,Pending,N/A,Medium,Minor,Negative,Unexecuted,Varies,Negative Variation
+TC_WISH_244,Wishlist,Add Wishlist,Verify adding from PLP - Test on Firefox,Logged in,"1. Click heart icon
+- Perform action on Firefox browser",UI functions identically to Chrome,Pending,N/A,Medium,Minor,Cross-Browser,Unexecuted,Varies,Cross-Browser Variation
+TC_WISH_245,Wishlist,Add Wishlist,Verify adding from PLP - Test on small viewport (320px),Logged in,"1. Click heart icon
+- Resize window to 320px and perform action",UI adjusts without overflow,Pending,N/A,Medium,Minor,Mobile,Unexecuted,Varies,Mobile Variation
+TC_WISH_246,Wishlist,Add Wishlist,Verify adding from PLP - Simulate page refresh during action,Logged in,"1. Click heart icon
+- Hit F5 mid-process",State is recovered or fails safely,Pending,N/A,Medium,Minor,Interrupt,Unexecuted,Varies,Interrupt Variation
+TC_WISH_247,Wishlist,Wishlist Persistence,Verify wishlist on re-login,Item in Wishlist,"1. Logout
+2. Login",Item still in wishlist,Pending,N/A,Medium,Major,Functional,Unexecuted,"Chrome, Safari, iOS, Android",Standard Case
+TC_WISH_248,Wishlist,Wishlist Persistence,Verify wishlist on re-login - Test max allowed string length,Item in Wishlist,"1. Logout
+2. Login
+- Input string of 255 chars",System handles limit gracefully,Pending,N/A,Medium,Minor,Boundary,Unexecuted,Varies,Boundary Variation
+TC_WISH_249,Wishlist,Wishlist Persistence,Verify wishlist on re-login - Test empty required fields,Item in Wishlist,"1. Logout
+2. Login
+- Submit without required data",Validation errors highlight fields,Pending,N/A,Medium,Minor,Negative,Unexecuted,Varies,Negative Variation
+TC_WISH_250,Wishlist,Wishlist Persistence,Verify wishlist on re-login - Test on Firefox,Item in Wishlist,"1. Logout
+2. Login
+- Perform action on Firefox browser",UI functions identically to Chrome,Pending,N/A,Medium,Minor,Cross-Browser,Unexecuted,Varies,Cross-Browser Variation
+TC_WISH_251,Wishlist,Wishlist Persistence,Verify wishlist on re-login - Test on small viewport (320px),Item in Wishlist,"1. Logout
+2. Login
+- Resize window to 320px and perform action",UI adjusts without overflow,Pending,N/A,Medium,Minor,Mobile,Unexecuted,Varies,Mobile Variation
+TC_WISH_252,Wishlist,Wishlist Persistence,Verify wishlist on re-login - Simulate page refresh during action,Item in Wishlist,"1. Logout
+2. Login
+- Hit F5 mid-process",State is recovered or fails safely,Pending,N/A,Medium,Minor,Interrupt,Unexecuted,Varies,Interrupt Variation
+TC_CHKT_253,Checkout Module,Address,Verify adding new address,In Checkout,"1. Fill address form
+2. Save",Address saved and selected,Pending,Valid Address,High,Critical,Functional,Unexecuted,"Chrome, Safari, iOS, Android",Standard Case
+TC_CHKT_254,Checkout Module,Address,Verify adding new address - Test max allowed string length,In Checkout,"1. Fill address form
+2. Save
+- Input string of 255 chars",System handles limit gracefully,Pending,Valid Address,Medium,Minor,Boundary,Unexecuted,Varies,Boundary Variation
+TC_CHKT_255,Checkout Module,Address,Verify adding new address - Test empty required fields,In Checkout,"1. Fill address form
+2. Save
+- Submit without required data",Validation errors highlight fields,Pending,Valid Address,Medium,Minor,Negative,Unexecuted,Varies,Negative Variation
+TC_CHKT_256,Checkout Module,Address,Verify adding new address - Test on Firefox,In Checkout,"1. Fill address form
+2. Save
+- Perform action on Firefox browser",UI functions identically to Chrome,Pending,Valid Address,Medium,Minor,Cross-Browser,Unexecuted,Varies,Cross-Browser Variation
+TC_CHKT_257,Checkout Module,Address,Verify adding new address - Test on small viewport (320px),In Checkout,"1. Fill address form
+2. Save
+- Resize window to 320px and perform action",UI adjusts without overflow,Pending,Valid Address,Medium,Minor,Mobile,Unexecuted,Varies,Mobile Variation
+TC_CHKT_258,Checkout Module,Address,Verify adding new address - Simulate page refresh during action,In Checkout,"1. Fill address form
+2. Save
+- Hit F5 mid-process",State is recovered or fails safely,Pending,Valid Address,Medium,Minor,Interrupt,Unexecuted,Varies,Interrupt Variation
+TC_CHKT_259,Checkout Module,Shipping Method,Verify shipping fee addition,In Checkout,1. Select Express,Fee added to total,Pending,Express option,High,Critical,Functional,Unexecuted,"Chrome, Safari, iOS, Android",Standard Case
+TC_CHKT_260,Checkout Module,Shipping Method,Verify shipping fee addition - Test max allowed string length,In Checkout,"1. Select Express
+- Input string of 255 chars",System handles limit gracefully,Pending,Express option,Medium,Minor,Boundary,Unexecuted,Varies,Boundary Variation
+TC_CHKT_261,Checkout Module,Shipping Method,Verify shipping fee addition - Test empty required fields,In Checkout,"1. Select Express
+- Submit without required data",Validation errors highlight fields,Pending,Express option,Medium,Minor,Negative,Unexecuted,Varies,Negative Variation
+TC_CHKT_262,Checkout Module,Shipping Method,Verify shipping fee addition - Test on Firefox,In Checkout,"1. Select Express
+- Perform action on Firefox browser",UI functions identically to Chrome,Pending,Express option,Medium,Minor,Cross-Browser,Unexecuted,Varies,Cross-Browser Variation
+TC_CHKT_263,Checkout Module,Shipping Method,Verify shipping fee addition - Test on small viewport (320px),In Checkout,"1. Select Express
+- Resize window to 320px and perform action",UI adjusts without overflow,Pending,Express option,Medium,Minor,Mobile,Unexecuted,Varies,Mobile Variation
+TC_CHKT_264,Checkout Module,Shipping Method,Verify shipping fee addition - Simulate page refresh during action,In Checkout,"1. Select Express
+- Hit F5 mid-process",State is recovered or fails safely,Pending,Express option,Medium,Minor,Interrupt,Unexecuted,Varies,Interrupt Variation
+TC_CHKT_265,Checkout Module,Coupon Code,Verify valid coupon,In Checkout,"1. Enter valid code
+2. Apply",Discount applied to total,Pending,SAVE10,High,Major,Functional,Unexecuted,"Chrome, Safari, iOS, Android",Standard Case
+TC_CHKT_266,Checkout Module,Coupon Code,Verify valid coupon - Test max allowed string length,In Checkout,"1. Enter valid code
+2. Apply
+- Input string of 255 chars",System handles limit gracefully,Pending,SAVE10,Medium,Minor,Boundary,Unexecuted,Varies,Boundary Variation
+TC_CHKT_267,Checkout Module,Coupon Code,Verify valid coupon - Test empty required fields,In Checkout,"1. Enter valid code
+2. Apply
+- Submit without required data",Validation errors highlight fields,Pending,SAVE10,Medium,Minor,Negative,Unexecuted,Varies,Negative Variation
+TC_CHKT_268,Checkout Module,Coupon Code,Verify valid coupon - Test on Firefox,In Checkout,"1. Enter valid code
+2. Apply
+- Perform action on Firefox browser",UI functions identically to Chrome,Pending,SAVE10,Medium,Minor,Cross-Browser,Unexecuted,Varies,Cross-Browser Variation
+TC_CHKT_269,Checkout Module,Coupon Code,Verify valid coupon - Test on small viewport (320px),In Checkout,"1. Enter valid code
+2. Apply
+- Resize window to 320px and perform action",UI adjusts without overflow,Pending,SAVE10,Medium,Minor,Mobile,Unexecuted,Varies,Mobile Variation
+TC_CHKT_270,Checkout Module,Coupon Code,Verify valid coupon - Simulate page refresh during action,In Checkout,"1. Enter valid code
+2. Apply
+- Hit F5 mid-process",State is recovered or fails safely,Pending,SAVE10,Medium,Minor,Interrupt,Unexecuted,Varies,Interrupt Variation
+TC_CHKT_271,Checkout Module,Coupon Code,Verify expired coupon,In Checkout,"1. Enter expired code
+2. Apply",Error: Coupon expired,Pending,OLD10,Medium,Major,Functional,Unexecuted,"Chrome, Safari, iOS, Android",Standard Case
+TC_CHKT_272,Checkout Module,Coupon Code,Verify expired coupon - Test max allowed string length,In Checkout,"1. Enter expired code
+2. Apply
+- Input string of 255 chars",System handles limit gracefully,Pending,OLD10,Medium,Minor,Boundary,Unexecuted,Varies,Boundary Variation
+TC_CHKT_273,Checkout Module,Coupon Code,Verify expired coupon - Test empty required fields,In Checkout,"1. Enter expired code
+2. Apply
+- Submit without required data",Validation errors highlight fields,Pending,OLD10,Medium,Minor,Negative,Unexecuted,Varies,Negative Variation
+TC_CHKT_274,Checkout Module,Coupon Code,Verify expired coupon - Test on Firefox,In Checkout,"1. Enter expired code
+2. Apply
+- Perform action on Firefox browser",UI functions identically to Chrome,Pending,OLD10,Medium,Minor,Cross-Browser,Unexecuted,Varies,Cross-Browser Variation
+TC_CHKT_275,Checkout Module,Coupon Code,Verify expired coupon - Test on small viewport (320px),In Checkout,"1. Enter expired code
+2. Apply
+- Resize window to 320px and perform action",UI adjusts without overflow,Pending,OLD10,Medium,Minor,Mobile,Unexecuted,Varies,Mobile Variation
+TC_CHKT_276,Checkout Module,Coupon Code,Verify expired coupon - Simulate page refresh during action,In Checkout,"1. Enter expired code
+2. Apply
+- Hit F5 mid-process",State is recovered or fails safely,Pending,OLD10,Medium,Minor,Interrupt,Unexecuted,Varies,Interrupt Variation
+TC_CHKT_277,Checkout Module,Tax Calculation,Verify tax by region,In Checkout,1. Select CA address,CA Tax rate applied,Pending,CA Address,High,Critical,Functional,Unexecuted,"Chrome, Safari, iOS, Android",Standard Case
+TC_CHKT_278,Checkout Module,Tax Calculation,Verify tax by region - Test max allowed string length,In Checkout,"1. Select CA address
+- Input string of 255 chars",System handles limit gracefully,Pending,CA Address,Medium,Minor,Boundary,Unexecuted,Varies,Boundary Variation
+TC_CHKT_279,Checkout Module,Tax Calculation,Verify tax by region - Test empty required fields,In Checkout,"1. Select CA address
+- Submit without required data",Validation errors highlight fields,Pending,CA Address,Medium,Minor,Negative,Unexecuted,Varies,Negative Variation
+TC_CHKT_280,Checkout Module,Tax Calculation,Verify tax by region - Test on Firefox,In Checkout,"1. Select CA address
+- Perform action on Firefox browser",UI functions identically to Chrome,Pending,CA Address,Medium,Minor,Cross-Browser,Unexecuted,Varies,Cross-Browser Variation
+TC_CHKT_281,Checkout Module,Tax Calculation,Verify tax by region - Test on small viewport (320px),In Checkout,"1. Select CA address
+- Resize window to 320px and perform action",UI adjusts without overflow,Pending,CA Address,Medium,Minor,Mobile,Unexecuted,Varies,Mobile Variation
+TC_CHKT_282,Checkout Module,Tax Calculation,Verify tax by region - Simulate page refresh during action,In Checkout,"1. Select CA address
+- Hit F5 mid-process",State is recovered or fails safely,Pending,CA Address,Medium,Minor,Interrupt,Unexecuted,Varies,Interrupt Variation
+TC_CHKT_283,Checkout Module,Guest Checkout,Verify checkout without login,Not logged in,"1. Add to cart
+2. Checkout","Prompted for guest email, proceeds",Pending,Guest Email,High,Critical,Functional,Unexecuted,"Chrome, Safari, iOS, Android",Standard Case
+TC_CHKT_284,Checkout Module,Guest Checkout,Verify checkout without login - Test max allowed string length,Not logged in,"1. Add to cart
+2. Checkout
+- Input string of 255 chars",System handles limit gracefully,Pending,Guest Email,Medium,Minor,Boundary,Unexecuted,Varies,Boundary Variation
+TC_CHKT_285,Checkout Module,Guest Checkout,Verify checkout without login - Test empty required fields,Not logged in,"1. Add to cart
+2. Checkout
+- Submit without required data",Validation errors highlight fields,Pending,Guest Email,Medium,Minor,Negative,Unexecuted,Varies,Negative Variation
+TC_CHKT_286,Checkout Module,Guest Checkout,Verify checkout without login - Test on Firefox,Not logged in,"1. Add to cart
+2. Checkout
+- Perform action on Firefox browser",UI functions identically to Chrome,Pending,Guest Email,Medium,Minor,Cross-Browser,Unexecuted,Varies,Cross-Browser Variation
+TC_CHKT_287,Checkout Module,Guest Checkout,Verify checkout without login - Test on small viewport (320px),Not logged in,"1. Add to cart
+2. Checkout
+- Resize window to 320px and perform action",UI adjusts without overflow,Pending,Guest Email,Medium,Minor,Mobile,Unexecuted,Varies,Mobile Variation
+TC_CHKT_288,Checkout Module,Guest Checkout,Verify checkout without login - Simulate page refresh during action,Not logged in,"1. Add to cart
+2. Checkout
+- Hit F5 mid-process",State is recovered or fails safely,Pending,Guest Email,Medium,Minor,Interrupt,Unexecuted,Varies,Interrupt Variation
+TC_PAY_289,Payment Gateway,Credit Card,Verify successful CC payment,In Payment Step,"1. Enter valid CC
+2. Pay",Order placed successfully,Pending,Test CC details,High,Critical,Integration,Unexecuted,"Chrome, Safari, iOS, Android",Standard Case
+TC_PAY_290,Payment Gateway,Credit Card,Verify successful CC payment - Test max allowed string length,In Payment Step,"1. Enter valid CC
+2. Pay
+- Input string of 255 chars",System handles limit gracefully,Pending,Test CC details,Medium,Minor,Boundary,Unexecuted,Varies,Boundary Variation
+TC_PAY_291,Payment Gateway,Credit Card,Verify successful CC payment - Test empty required fields,In Payment Step,"1. Enter valid CC
+2. Pay
+- Submit without required data",Validation errors highlight fields,Pending,Test CC details,Medium,Minor,Negative,Unexecuted,Varies,Negative Variation
+TC_PAY_292,Payment Gateway,Credit Card,Verify successful CC payment - Test on Firefox,In Payment Step,"1. Enter valid CC
+2. Pay
+- Perform action on Firefox browser",UI functions identically to Chrome,Pending,Test CC details,Medium,Minor,Cross-Browser,Unexecuted,Varies,Cross-Browser Variation
+TC_PAY_293,Payment Gateway,Credit Card,Verify successful CC payment - Test on small viewport (320px),In Payment Step,"1. Enter valid CC
+2. Pay
+- Resize window to 320px and perform action",UI adjusts without overflow,Pending,Test CC details,Medium,Minor,Mobile,Unexecuted,Varies,Mobile Variation
+TC_PAY_294,Payment Gateway,Credit Card,Verify successful CC payment - Simulate page refresh during action,In Payment Step,"1. Enter valid CC
+2. Pay
+- Hit F5 mid-process",State is recovered or fails safely,Pending,Test CC details,Medium,Minor,Interrupt,Unexecuted,Varies,Interrupt Variation
+TC_PAY_295,Payment Gateway,Credit Card,Verify declined CC payment,In Payment Step,1. Enter declined test CC,"Payment failed, retry prompt",Pending,Declined CC,High,Critical,Integration,Unexecuted,"Chrome, Safari, iOS, Android",Standard Case
+TC_PAY_296,Payment Gateway,Credit Card,Verify declined CC payment - Test max allowed string length,In Payment Step,"1. Enter declined test CC
+- Input string of 255 chars",System handles limit gracefully,Pending,Declined CC,Medium,Minor,Boundary,Unexecuted,Varies,Boundary Variation
+TC_PAY_297,Payment Gateway,Credit Card,Verify declined CC payment - Test empty required fields,In Payment Step,"1. Enter declined test CC
+- Submit without required data",Validation errors highlight fields,Pending,Declined CC,Medium,Minor,Negative,Unexecuted,Varies,Negative Variation
+TC_PAY_298,Payment Gateway,Credit Card,Verify declined CC payment - Test on Firefox,In Payment Step,"1. Enter declined test CC
+- Perform action on Firefox browser",UI functions identically to Chrome,Pending,Declined CC,Medium,Minor,Cross-Browser,Unexecuted,Varies,Cross-Browser Variation
+TC_PAY_299,Payment Gateway,Credit Card,Verify declined CC payment - Test on small viewport (320px),In Payment Step,"1. Enter declined test CC
+- Resize window to 320px and perform action",UI adjusts without overflow,Pending,Declined CC,Medium,Minor,Mobile,Unexecuted,Varies,Mobile Variation
+TC_PAY_300,Payment Gateway,Credit Card,Verify declined CC payment - Simulate page refresh during action,In Payment Step,"1. Enter declined test CC
+- Hit F5 mid-process",State is recovered or fails safely,Pending,Declined CC,Medium,Minor,Interrupt,Unexecuted,Varies,Interrupt Variation
+TC_PAY_301,Payment Gateway,UPI,Verify UPI intent flow,In Payment Step (Mobile),"1. Select UPI
+2. Pay",UPI apps list opens,Pending,UPI VPA,High,Major,Integration,Unexecuted,"Chrome, Safari, iOS, Android",Standard Case
+TC_PAY_302,Payment Gateway,UPI,Verify UPI intent flow - Test max allowed string length,In Payment Step (Mobile),"1. Select UPI
+2. Pay
+- Input string of 255 chars",System handles limit gracefully,Pending,UPI VPA,Medium,Minor,Boundary,Unexecuted,Varies,Boundary Variation
+TC_PAY_303,Payment Gateway,UPI,Verify UPI intent flow - Test empty required fields,In Payment Step (Mobile),"1. Select UPI
+2. Pay
+- Submit without required data",Validation errors highlight fields,Pending,UPI VPA,Medium,Minor,Negative,Unexecuted,Varies,Negative Variation
+TC_PAY_304,Payment Gateway,UPI,Verify UPI intent flow - Test on Firefox,In Payment Step (Mobile),"1. Select UPI
+2. Pay
+- Perform action on Firefox browser",UI functions identically to Chrome,Pending,UPI VPA,Medium,Minor,Cross-Browser,Unexecuted,Varies,Cross-Browser Variation
+TC_PAY_305,Payment Gateway,UPI,Verify UPI intent flow - Test on small viewport (320px),In Payment Step (Mobile),"1. Select UPI
+2. Pay
+- Resize window to 320px and perform action",UI adjusts without overflow,Pending,UPI VPA,Medium,Minor,Mobile,Unexecuted,Varies,Mobile Variation
+TC_PAY_306,Payment Gateway,UPI,Verify UPI intent flow - Simulate page refresh during action,In Payment Step (Mobile),"1. Select UPI
+2. Pay
+- Hit F5 mid-process",State is recovered or fails safely,Pending,UPI VPA,Medium,Minor,Interrupt,Unexecuted,Varies,Interrupt Variation
+TC_PAY_307,Payment Gateway,COD,Verify Cash on Delivery,In Payment Step,"1. Select COD
+2. Place Order",Order placed with COD status,Pending,N/A,High,Critical,Functional,Unexecuted,"Chrome, Safari, iOS, Android",Standard Case
+TC_PAY_308,Payment Gateway,COD,Verify Cash on Delivery - Test max allowed string length,In Payment Step,"1. Select COD
+2. Place Order
+- Input string of 255 chars",System handles limit gracefully,Pending,N/A,Medium,Minor,Boundary,Unexecuted,Varies,Boundary Variation
+TC_PAY_309,Payment Gateway,COD,Verify Cash on Delivery - Test empty required fields,In Payment Step,"1. Select COD
+2. Place Order
+- Submit without required data",Validation errors highlight fields,Pending,N/A,Medium,Minor,Negative,Unexecuted,Varies,Negative Variation
+TC_PAY_310,Payment Gateway,COD,Verify Cash on Delivery - Test on Firefox,In Payment Step,"1. Select COD
+2. Place Order
+- Perform action on Firefox browser",UI functions identically to Chrome,Pending,N/A,Medium,Minor,Cross-Browser,Unexecuted,Varies,Cross-Browser Variation
+TC_PAY_311,Payment Gateway,COD,Verify Cash on Delivery - Test on small viewport (320px),In Payment Step,"1. Select COD
+2. Place Order
+- Resize window to 320px and perform action",UI adjusts without overflow,Pending,N/A,Medium,Minor,Mobile,Unexecuted,Varies,Mobile Variation
+TC_PAY_312,Payment Gateway,COD,Verify Cash on Delivery - Simulate page refresh during action,In Payment Step,"1. Select COD
+2. Place Order
+- Hit F5 mid-process",State is recovered or fails safely,Pending,N/A,Medium,Minor,Interrupt,Unexecuted,Varies,Interrupt Variation
+TC_PAY_313,Payment Gateway,Duplicate Prevent,Verify double click block,In Payment Step,1. Click Pay rapidly 3 times,Only one transaction processed,Pending,N/A,High,Critical,Performance/UI,Unexecuted,"Chrome, Safari, iOS, Android",Standard Case
+TC_PAY_314,Payment Gateway,Duplicate Prevent,Verify double click block - Test max allowed string length,In Payment Step,"1. Click Pay rapidly 3 times
+- Input string of 255 chars",System handles limit gracefully,Pending,N/A,Medium,Minor,Boundary,Unexecuted,Varies,Boundary Variation
+TC_PAY_315,Payment Gateway,Duplicate Prevent,Verify double click block - Test empty required fields,In Payment Step,"1. Click Pay rapidly 3 times
+- Submit without required data",Validation errors highlight fields,Pending,N/A,Medium,Minor,Negative,Unexecuted,Varies,Negative Variation
+TC_PAY_316,Payment Gateway,Duplicate Prevent,Verify double click block - Test on Firefox,In Payment Step,"1. Click Pay rapidly 3 times
+- Perform action on Firefox browser",UI functions identically to Chrome,Pending,N/A,Medium,Minor,Cross-Browser,Unexecuted,Varies,Cross-Browser Variation
+TC_PAY_317,Payment Gateway,Duplicate Prevent,Verify double click block - Test on small viewport (320px),In Payment Step,"1. Click Pay rapidly 3 times
+- Resize window to 320px and perform action",UI adjusts without overflow,Pending,N/A,Medium,Minor,Mobile,Unexecuted,Varies,Mobile Variation
+TC_PAY_318,Payment Gateway,Duplicate Prevent,Verify double click block - Simulate page refresh during action,In Payment Step,"1. Click Pay rapidly 3 times
+- Hit F5 mid-process",State is recovered or fails safely,Pending,N/A,Medium,Minor,Interrupt,Unexecuted,Varies,Interrupt Variation
+TC_ORD_319,Order Management,Order Placement,Verify order confirmation email,Order Placed,1. Check email inbox,Confirmation email received,Pending,Email account,High,Major,Integration,Unexecuted,"Chrome, Safari, iOS, Android",Standard Case
+TC_ORD_320,Order Management,Order Placement,Verify order confirmation email - Test max allowed string length,Order Placed,"1. Check email inbox
+- Input string of 255 chars",System handles limit gracefully,Pending,Email account,Medium,Minor,Boundary,Unexecuted,Varies,Boundary Variation
+TC_ORD_321,Order Management,Order Placement,Verify order confirmation email - Test empty required fields,Order Placed,"1. Check email inbox
+- Submit without required data",Validation errors highlight fields,Pending,Email account,Medium,Minor,Negative,Unexecuted,Varies,Negative Variation
+TC_ORD_322,Order Management,Order Placement,Verify order confirmation email - Test on Firefox,Order Placed,"1. Check email inbox
+- Perform action on Firefox browser",UI functions identically to Chrome,Pending,Email account,Medium,Minor,Cross-Browser,Unexecuted,Varies,Cross-Browser Variation
+TC_ORD_323,Order Management,Order Placement,Verify order confirmation email - Test on small viewport (320px),Order Placed,"1. Check email inbox
+- Resize window to 320px and perform action",UI adjusts without overflow,Pending,Email account,Medium,Minor,Mobile,Unexecuted,Varies,Mobile Variation
+TC_ORD_324,Order Management,Order Placement,Verify order confirmation email - Simulate page refresh during action,Order Placed,"1. Check email inbox
+- Hit F5 mid-process",State is recovered or fails safely,Pending,Email account,Medium,Minor,Interrupt,Unexecuted,Varies,Interrupt Variation
+TC_ORD_325,Order Management,Order Tracking,Verify tracking status,Order Dispatched,"1. Go to My Orders
+2. Click Track",Tracking timeline shown,Pending,Dispatched Order,Medium,Major,Functional,Unexecuted,"Chrome, Safari, iOS, Android",Standard Case
+TC_ORD_326,Order Management,Order Tracking,Verify tracking status - Test max allowed string length,Order Dispatched,"1. Go to My Orders
+2. Click Track
+- Input string of 255 chars",System handles limit gracefully,Pending,Dispatched Order,Medium,Minor,Boundary,Unexecuted,Varies,Boundary Variation
+TC_ORD_327,Order Management,Order Tracking,Verify tracking status - Test empty required fields,Order Dispatched,"1. Go to My Orders
+2. Click Track
+- Submit without required data",Validation errors highlight fields,Pending,Dispatched Order,Medium,Minor,Negative,Unexecuted,Varies,Negative Variation
+TC_ORD_328,Order Management,Order Tracking,Verify tracking status - Test on Firefox,Order Dispatched,"1. Go to My Orders
+2. Click Track
+- Perform action on Firefox browser",UI functions identically to Chrome,Pending,Dispatched Order,Medium,Minor,Cross-Browser,Unexecuted,Varies,Cross-Browser Variation
+TC_ORD_329,Order Management,Order Tracking,Verify tracking status - Test on small viewport (320px),Order Dispatched,"1. Go to My Orders
+2. Click Track
+- Resize window to 320px and perform action",UI adjusts without overflow,Pending,Dispatched Order,Medium,Minor,Mobile,Unexecuted,Varies,Mobile Variation
+TC_ORD_330,Order Management,Order Tracking,Verify tracking status - Simulate page refresh during action,Order Dispatched,"1. Go to My Orders
+2. Click Track
+- Hit F5 mid-process",State is recovered or fails safely,Pending,Dispatched Order,Medium,Minor,Interrupt,Unexecuted,Varies,Interrupt Variation
+TC_ORD_331,Order Management,Order Cancellation,Verify cancel before ship,Order Processing,"1. Click Cancel
+2. Confirm","Order cancelled, refund initiated",Pending,Unshipped Order,High,Critical,Functional,Unexecuted,"Chrome, Safari, iOS, Android",Standard Case
+TC_ORD_332,Order Management,Order Cancellation,Verify cancel before ship - Test max allowed string length,Order Processing,"1. Click Cancel
+2. Confirm
+- Input string of 255 chars",System handles limit gracefully,Pending,Unshipped Order,Medium,Minor,Boundary,Unexecuted,Varies,Boundary Variation
+TC_ORD_333,Order Management,Order Cancellation,Verify cancel before ship - Test empty required fields,Order Processing,"1. Click Cancel
+2. Confirm
+- Submit without required data",Validation errors highlight fields,Pending,Unshipped Order,Medium,Minor,Negative,Unexecuted,Varies,Negative Variation
+TC_ORD_334,Order Management,Order Cancellation,Verify cancel before ship - Test on Firefox,Order Processing,"1. Click Cancel
+2. Confirm
+- Perform action on Firefox browser",UI functions identically to Chrome,Pending,Unshipped Order,Medium,Minor,Cross-Browser,Unexecuted,Varies,Cross-Browser Variation
+TC_ORD_335,Order Management,Order Cancellation,Verify cancel before ship - Test on small viewport (320px),Order Processing,"1. Click Cancel
+2. Confirm
+- Resize window to 320px and perform action",UI adjusts without overflow,Pending,Unshipped Order,Medium,Minor,Mobile,Unexecuted,Varies,Mobile Variation
+TC_ORD_336,Order Management,Order Cancellation,Verify cancel before ship - Simulate page refresh during action,Order Processing,"1. Click Cancel
+2. Confirm
+- Hit F5 mid-process",State is recovered or fails safely,Pending,Unshipped Order,Medium,Minor,Interrupt,Unexecuted,Varies,Interrupt Variation
+TC_ORD_337,Order Management,Invoice,Verify invoice PDF download,Order Delivered,1. Click Download Invoice,PDF downloads with correct math,Pending,Delivered Order,Medium,Minor,Functional,Unexecuted,"Chrome, Safari, iOS, Android",Standard Case
+TC_ORD_338,Order Management,Invoice,Verify invoice PDF download - Test max allowed string length,Order Delivered,"1. Click Download Invoice
+- Input string of 255 chars",System handles limit gracefully,Pending,Delivered Order,Medium,Minor,Boundary,Unexecuted,Varies,Boundary Variation
+TC_ORD_339,Order Management,Invoice,Verify invoice PDF download - Test empty required fields,Order Delivered,"1. Click Download Invoice
+- Submit without required data",Validation errors highlight fields,Pending,Delivered Order,Medium,Minor,Negative,Unexecuted,Varies,Negative Variation
+TC_ORD_340,Order Management,Invoice,Verify invoice PDF download - Test on Firefox,Order Delivered,"1. Click Download Invoice
+- Perform action on Firefox browser",UI functions identically to Chrome,Pending,Delivered Order,Medium,Minor,Cross-Browser,Unexecuted,Varies,Cross-Browser Variation
+TC_ORD_341,Order Management,Invoice,Verify invoice PDF download - Test on small viewport (320px),Order Delivered,"1. Click Download Invoice
+- Resize window to 320px and perform action",UI adjusts without overflow,Pending,Delivered Order,Medium,Minor,Mobile,Unexecuted,Varies,Mobile Variation
+TC_ORD_342,Order Management,Invoice,Verify invoice PDF download - Simulate page refresh during action,Order Delivered,"1. Click Download Invoice
+- Hit F5 mid-process",State is recovered or fails safely,Pending,Delivered Order,Medium,Minor,Interrupt,Unexecuted,Varies,Interrupt Variation
+TC_ADM_343,Admin Panel,Dashboard,Verify metrics load,Admin Logged In,1. View dashboard,Sales/Orders stats load correctly,Pending,N/A,Medium,Major,UI/API,Unexecuted,"Chrome, Safari, iOS, Android",Standard Case
+TC_ADM_344,Admin Panel,Dashboard,Verify metrics load - Test max allowed string length,Admin Logged In,"1. View dashboard
+- Input string of 255 chars",System handles limit gracefully,Pending,N/A,Medium,Minor,Boundary,Unexecuted,Varies,Boundary Variation
+TC_ADM_345,Admin Panel,Dashboard,Verify metrics load - Test empty required fields,Admin Logged In,"1. View dashboard
+- Submit without required data",Validation errors highlight fields,Pending,N/A,Medium,Minor,Negative,Unexecuted,Varies,Negative Variation
+TC_ADM_346,Admin Panel,Dashboard,Verify metrics load - Test on Firefox,Admin Logged In,"1. View dashboard
+- Perform action on Firefox browser",UI functions identically to Chrome,Pending,N/A,Medium,Minor,Cross-Browser,Unexecuted,Varies,Cross-Browser Variation
+TC_ADM_347,Admin Panel,Dashboard,Verify metrics load - Test on small viewport (320px),Admin Logged In,"1. View dashboard
+- Resize window to 320px and perform action",UI adjusts without overflow,Pending,N/A,Medium,Minor,Mobile,Unexecuted,Varies,Mobile Variation
+TC_ADM_348,Admin Panel,Dashboard,Verify metrics load - Simulate page refresh during action,Admin Logged In,"1. View dashboard
+- Hit F5 mid-process",State is recovered or fails safely,Pending,N/A,Medium,Minor,Interrupt,Unexecuted,Varies,Interrupt Variation
+TC_ADM_349,Admin Panel,Product Mgmt,Verify adding new product,Admin > Products,"1. Fill product form
+2. Save",Product appears on storefront,Pending,New Prod Data,High,Critical,Functional,Unexecuted,"Chrome, Safari, iOS, Android",Standard Case
+TC_ADM_350,Admin Panel,Product Mgmt,Verify adding new product - Test max allowed string length,Admin > Products,"1. Fill product form
+2. Save
+- Input string of 255 chars",System handles limit gracefully,Pending,New Prod Data,Medium,Minor,Boundary,Unexecuted,Varies,Boundary Variation
+TC_ADM_351,Admin Panel,Product Mgmt,Verify adding new product - Test empty required fields,Admin > Products,"1. Fill product form
+2. Save
+- Submit without required data",Validation errors highlight fields,Pending,New Prod Data,Medium,Minor,Negative,Unexecuted,Varies,Negative Variation
+TC_ADM_352,Admin Panel,Product Mgmt,Verify adding new product - Test on Firefox,Admin > Products,"1. Fill product form
+2. Save
+- Perform action on Firefox browser",UI functions identically to Chrome,Pending,New Prod Data,Medium,Minor,Cross-Browser,Unexecuted,Varies,Cross-Browser Variation
+TC_ADM_353,Admin Panel,Product Mgmt,Verify adding new product - Test on small viewport (320px),Admin > Products,"1. Fill product form
+2. Save
+- Resize window to 320px and perform action",UI adjusts without overflow,Pending,New Prod Data,Medium,Minor,Mobile,Unexecuted,Varies,Mobile Variation
+TC_ADM_354,Admin Panel,Product Mgmt,Verify adding new product - Simulate page refresh during action,Admin > Products,"1. Fill product form
+2. Save
+- Hit F5 mid-process",State is recovered or fails safely,Pending,New Prod Data,Medium,Minor,Interrupt,Unexecuted,Varies,Interrupt Variation
+TC_ADM_355,Admin Panel,Order Mgmt,Verify updating order status,Admin > Orders,"1. Change to Shipped
+2. Save","User notified, status updated",Pending,Order ID,High,Critical,Functional,Unexecuted,"Chrome, Safari, iOS, Android",Standard Case
+TC_ADM_356,Admin Panel,Order Mgmt,Verify updating order status - Test max allowed string length,Admin > Orders,"1. Change to Shipped
+2. Save
+- Input string of 255 chars",System handles limit gracefully,Pending,Order ID,Medium,Minor,Boundary,Unexecuted,Varies,Boundary Variation
+TC_ADM_357,Admin Panel,Order Mgmt,Verify updating order status - Test empty required fields,Admin > Orders,"1. Change to Shipped
+2. Save
+- Submit without required data",Validation errors highlight fields,Pending,Order ID,Medium,Minor,Negative,Unexecuted,Varies,Negative Variation
+TC_ADM_358,Admin Panel,Order Mgmt,Verify updating order status - Test on Firefox,Admin > Orders,"1. Change to Shipped
+2. Save
+- Perform action on Firefox browser",UI functions identically to Chrome,Pending,Order ID,Medium,Minor,Cross-Browser,Unexecuted,Varies,Cross-Browser Variation
+TC_ADM_359,Admin Panel,Order Mgmt,Verify updating order status - Test on small viewport (320px),Admin > Orders,"1. Change to Shipped
+2. Save
+- Resize window to 320px and perform action",UI adjusts without overflow,Pending,Order ID,Medium,Minor,Mobile,Unexecuted,Varies,Mobile Variation
+TC_ADM_360,Admin Panel,Order Mgmt,Verify updating order status - Simulate page refresh during action,Admin > Orders,"1. Change to Shipped
+2. Save
+- Hit F5 mid-process",State is recovered or fails safely,Pending,Order ID,Medium,Minor,Interrupt,Unexecuted,Varies,Interrupt Variation
+TC_ADM_361,Admin Panel,Coupon Mgmt,Verify creating percentage discount,Admin > Coupons,"1. Create 20% off
+2. Save",Coupon active and usable,Pending,20% Config,High,Major,Functional,Unexecuted,"Chrome, Safari, iOS, Android",Standard Case
+TC_ADM_362,Admin Panel,Coupon Mgmt,Verify creating percentage discount - Test max allowed string length,Admin > Coupons,"1. Create 20% off
+2. Save
+- Input string of 255 chars",System handles limit gracefully,Pending,20% Config,Medium,Minor,Boundary,Unexecuted,Varies,Boundary Variation
+TC_ADM_363,Admin Panel,Coupon Mgmt,Verify creating percentage discount - Test empty required fields,Admin > Coupons,"1. Create 20% off
+2. Save
+- Submit without required data",Validation errors highlight fields,Pending,20% Config,Medium,Minor,Negative,Unexecuted,Varies,Negative Variation
+TC_ADM_364,Admin Panel,Coupon Mgmt,Verify creating percentage discount - Test on Firefox,Admin > Coupons,"1. Create 20% off
+2. Save
+- Perform action on Firefox browser",UI functions identically to Chrome,Pending,20% Config,Medium,Minor,Cross-Browser,Unexecuted,Varies,Cross-Browser Variation
+TC_ADM_365,Admin Panel,Coupon Mgmt,Verify creating percentage discount - Test on small viewport (320px),Admin > Coupons,"1. Create 20% off
+2. Save
+- Resize window to 320px and perform action",UI adjusts without overflow,Pending,20% Config,Medium,Minor,Mobile,Unexecuted,Varies,Mobile Variation
+TC_ADM_366,Admin Panel,Coupon Mgmt,Verify creating percentage discount - Simulate page refresh during action,Admin > Coupons,"1. Create 20% off
+2. Save
+- Hit F5 mid-process",State is recovered or fails safely,Pending,20% Config,Medium,Minor,Interrupt,Unexecuted,Varies,Interrupt Variation
+TC_SEO_367,SEO Testing,Meta Tags,Verify title tags on PDP,On PDP,1. Inspect HTML head,Title contains product name,Pending,N/A,Medium,Major,Validation,Unexecuted,"Chrome, Safari, iOS, Android",Standard Case
+TC_SEO_368,SEO Testing,Meta Tags,Verify title tags on PDP - Test max allowed string length,On PDP,"1. Inspect HTML head
+- Input string of 255 chars",System handles limit gracefully,Pending,N/A,Medium,Minor,Boundary,Unexecuted,Varies,Boundary Variation
+TC_SEO_369,SEO Testing,Meta Tags,Verify title tags on PDP - Test empty required fields,On PDP,"1. Inspect HTML head
+- Submit without required data",Validation errors highlight fields,Pending,N/A,Medium,Minor,Negative,Unexecuted,Varies,Negative Variation
+TC_SEO_370,SEO Testing,Meta Tags,Verify title tags on PDP - Test on Firefox,On PDP,"1. Inspect HTML head
+- Perform action on Firefox browser",UI functions identically to Chrome,Pending,N/A,Medium,Minor,Cross-Browser,Unexecuted,Varies,Cross-Browser Variation
+TC_SEO_371,SEO Testing,Meta Tags,Verify title tags on PDP - Test on small viewport (320px),On PDP,"1. Inspect HTML head
+- Resize window to 320px and perform action",UI adjusts without overflow,Pending,N/A,Medium,Minor,Mobile,Unexecuted,Varies,Mobile Variation
+TC_SEO_372,SEO Testing,Meta Tags,Verify title tags on PDP - Simulate page refresh during action,On PDP,"1. Inspect HTML head
+- Hit F5 mid-process",State is recovered or fails safely,Pending,N/A,Medium,Minor,Interrupt,Unexecuted,Varies,Interrupt Variation
+TC_SEO_373,SEO Testing,Canonical,Verify canonical URLs,On PLP with filters,1. Inspect HTML head,Canonical points to base PLP,Pending,?sort=asc,Medium,Major,Validation,Unexecuted,"Chrome, Safari, iOS, Android",Standard Case
+TC_SEO_374,SEO Testing,Canonical,Verify canonical URLs - Test max allowed string length,On PLP with filters,"1. Inspect HTML head
+- Input string of 255 chars",System handles limit gracefully,Pending,?sort=asc,Medium,Minor,Boundary,Unexecuted,Varies,Boundary Variation
+TC_SEO_375,SEO Testing,Canonical,Verify canonical URLs - Test empty required fields,On PLP with filters,"1. Inspect HTML head
+- Submit without required data",Validation errors highlight fields,Pending,?sort=asc,Medium,Minor,Negative,Unexecuted,Varies,Negative Variation
+TC_SEO_376,SEO Testing,Canonical,Verify canonical URLs - Test on Firefox,On PLP with filters,"1. Inspect HTML head
+- Perform action on Firefox browser",UI functions identically to Chrome,Pending,?sort=asc,Medium,Minor,Cross-Browser,Unexecuted,Varies,Cross-Browser Variation
+TC_SEO_377,SEO Testing,Canonical,Verify canonical URLs - Test on small viewport (320px),On PLP with filters,"1. Inspect HTML head
+- Resize window to 320px and perform action",UI adjusts without overflow,Pending,?sort=asc,Medium,Minor,Mobile,Unexecuted,Varies,Mobile Variation
+TC_SEO_378,SEO Testing,Canonical,Verify canonical URLs - Simulate page refresh during action,On PLP with filters,"1. Inspect HTML head
+- Hit F5 mid-process",State is recovered or fails safely,Pending,?sort=asc,Medium,Minor,Interrupt,Unexecuted,Varies,Interrupt Variation
+TC_SEO_379,SEO Testing,Structured Data,Verify JSON-LD schema,On PDP,1. Check schema.org script,Product schema is present,Pending,N/A,Medium,Major,Validation,Unexecuted,"Chrome, Safari, iOS, Android",Standard Case
+TC_SEO_380,SEO Testing,Structured Data,Verify JSON-LD schema - Test max allowed string length,On PDP,"1. Check schema.org script
+- Input string of 255 chars",System handles limit gracefully,Pending,N/A,Medium,Minor,Boundary,Unexecuted,Varies,Boundary Variation
+TC_SEO_381,SEO Testing,Structured Data,Verify JSON-LD schema - Test empty required fields,On PDP,"1. Check schema.org script
+- Submit without required data",Validation errors highlight fields,Pending,N/A,Medium,Minor,Negative,Unexecuted,Varies,Negative Variation
+TC_SEO_382,SEO Testing,Structured Data,Verify JSON-LD schema - Test on Firefox,On PDP,"1. Check schema.org script
+- Perform action on Firefox browser",UI functions identically to Chrome,Pending,N/A,Medium,Minor,Cross-Browser,Unexecuted,Varies,Cross-Browser Variation
+TC_SEO_383,SEO Testing,Structured Data,Verify JSON-LD schema - Test on small viewport (320px),On PDP,"1. Check schema.org script
+- Resize window to 320px and perform action",UI adjusts without overflow,Pending,N/A,Medium,Minor,Mobile,Unexecuted,Varies,Mobile Variation
+TC_SEO_384,SEO Testing,Structured Data,Verify JSON-LD schema - Simulate page refresh during action,On PDP,"1. Check schema.org script
+- Hit F5 mid-process",State is recovered or fails safely,Pending,N/A,Medium,Minor,Interrupt,Unexecuted,Varies,Interrupt Variation
+TC_SEC_385,Security Testing,XSS,Verify script injection in review,Review Form,1. Enter <script>alert(1)</script>,"Script stripped, rendered as text",Pending,XSS Payload,High,Critical,Security,Unexecuted,"Chrome, Safari, iOS, Android",Standard Case
+TC_SEC_386,Security Testing,XSS,Verify script injection in review - Test max allowed string length,Review Form,"1. Enter <script>alert(1)</script>
+- Input string of 255 chars",System handles limit gracefully,Pending,XSS Payload,Medium,Minor,Boundary,Unexecuted,Varies,Boundary Variation
+TC_SEC_387,Security Testing,XSS,Verify script injection in review - Test empty required fields,Review Form,"1. Enter <script>alert(1)</script>
+- Submit without required data",Validation errors highlight fields,Pending,XSS Payload,Medium,Minor,Negative,Unexecuted,Varies,Negative Variation
+TC_SEC_388,Security Testing,XSS,Verify script injection in review - Test on Firefox,Review Form,"1. Enter <script>alert(1)</script>
+- Perform action on Firefox browser",UI functions identically to Chrome,Pending,XSS Payload,Medium,Minor,Cross-Browser,Unexecuted,Varies,Cross-Browser Variation
+TC_SEC_389,Security Testing,XSS,Verify script injection in review - Test on small viewport (320px),Review Form,"1. Enter <script>alert(1)</script>
+- Resize window to 320px and perform action",UI adjusts without overflow,Pending,XSS Payload,Medium,Minor,Mobile,Unexecuted,Varies,Mobile Variation
+TC_SEC_390,Security Testing,XSS,Verify script injection in review - Simulate page refresh during action,Review Form,"1. Enter <script>alert(1)</script>
+- Hit F5 mid-process",State is recovered or fails safely,Pending,XSS Payload,Medium,Minor,Interrupt,Unexecuted,Varies,Interrupt Variation
+TC_SEC_391,Security Testing,CSRF,Verify CSRF token on POST,Cart API,1. Submit POST without CSRF token,403 Forbidden returned,Pending,API Tool,High,Critical,Security,Unexecuted,"Chrome, Safari, iOS, Android",Standard Case
+TC_SEC_392,Security Testing,CSRF,Verify CSRF token on POST - Test max allowed string length,Cart API,"1. Submit POST without CSRF token
+- Input string of 255 chars",System handles limit gracefully,Pending,API Tool,Medium,Minor,Boundary,Unexecuted,Varies,Boundary Variation
+TC_SEC_393,Security Testing,CSRF,Verify CSRF token on POST - Test empty required fields,Cart API,"1. Submit POST without CSRF token
+- Submit without required data",Validation errors highlight fields,Pending,API Tool,Medium,Minor,Negative,Unexecuted,Varies,Negative Variation
+TC_SEC_394,Security Testing,CSRF,Verify CSRF token on POST - Test on Firefox,Cart API,"1. Submit POST without CSRF token
+- Perform action on Firefox browser",UI functions identically to Chrome,Pending,API Tool,Medium,Minor,Cross-Browser,Unexecuted,Varies,Cross-Browser Variation
+TC_SEC_395,Security Testing,CSRF,Verify CSRF token on POST - Test on small viewport (320px),Cart API,"1. Submit POST without CSRF token
+- Resize window to 320px and perform action",UI adjusts without overflow,Pending,API Tool,Medium,Minor,Mobile,Unexecuted,Varies,Mobile Variation
+TC_SEC_396,Security Testing,CSRF,Verify CSRF token on POST - Simulate page refresh during action,Cart API,"1. Submit POST without CSRF token
+- Hit F5 mid-process",State is recovered or fails safely,Pending,API Tool,Medium,Minor,Interrupt,Unexecuted,Varies,Interrupt Variation
+TC_SEC_397,Security Testing,Auth Bypass,Verify protected routes,Logged out,1. Visit /profile URL,Redirected to login,Pending,N/A,High,Critical,Security,Unexecuted,"Chrome, Safari, iOS, Android",Standard Case
+TC_SEC_398,Security Testing,Auth Bypass,Verify protected routes - Test max allowed string length,Logged out,"1. Visit /profile URL
+- Input string of 255 chars",System handles limit gracefully,Pending,N/A,Medium,Minor,Boundary,Unexecuted,Varies,Boundary Variation
+TC_SEC_399,Security Testing,Auth Bypass,Verify protected routes - Test empty required fields,Logged out,"1. Visit /profile URL
+- Submit without required data",Validation errors highlight fields,Pending,N/A,Medium,Minor,Negative,Unexecuted,Varies,Negative Variation
+TC_SEC_400,Security Testing,Auth Bypass,Verify protected routes - Test on Firefox,Logged out,"1. Visit /profile URL
+- Perform action on Firefox browser",UI functions identically to Chrome,Pending,N/A,Medium,Minor,Cross-Browser,Unexecuted,Varies,Cross-Browser Variation
+TC_SEC_401,Security Testing,Auth Bypass,Verify protected routes - Test on small viewport (320px),Logged out,"1. Visit /profile URL
+- Resize window to 320px and perform action",UI adjusts without overflow,Pending,N/A,Medium,Minor,Mobile,Unexecuted,Varies,Mobile Variation
+TC_SEC_402,Security Testing,Auth Bypass,Verify protected routes - Simulate page refresh during action,Logged out,"1. Visit /profile URL
+- Hit F5 mid-process",State is recovered or fails safely,Pending,N/A,Medium,Minor,Interrupt,Unexecuted,Varies,Interrupt Variation
+TC_PERF_403,Performance Testing,Load Time,Verify PLP load time,On PLP,"1. Open DevTools
+2. Refresh",LCP under 2.5 seconds,Pending,Network tab,Medium,Major,Performance,Unexecuted,"Chrome, Safari, iOS, Android",Standard Case
+TC_PERF_404,Performance Testing,Load Time,Verify PLP load time - Test max allowed string length,On PLP,"1. Open DevTools
+2. Refresh
+- Input string of 255 chars",System handles limit gracefully,Pending,Network tab,Medium,Minor,Boundary,Unexecuted,Varies,Boundary Variation
+TC_PERF_405,Performance Testing,Load Time,Verify PLP load time - Test empty required fields,On PLP,"1. Open DevTools
+2. Refresh
+- Submit without required data",Validation errors highlight fields,Pending,Network tab,Medium,Minor,Negative,Unexecuted,Varies,Negative Variation
+TC_PERF_406,Performance Testing,Load Time,Verify PLP load time - Test on Firefox,On PLP,"1. Open DevTools
+2. Refresh
+- Perform action on Firefox browser",UI functions identically to Chrome,Pending,Network tab,Medium,Minor,Cross-Browser,Unexecuted,Varies,Cross-Browser Variation
+TC_PERF_407,Performance Testing,Load Time,Verify PLP load time - Test on small viewport (320px),On PLP,"1. Open DevTools
+2. Refresh
+- Resize window to 320px and perform action",UI adjusts without overflow,Pending,Network tab,Medium,Minor,Mobile,Unexecuted,Varies,Mobile Variation
+TC_PERF_408,Performance Testing,Load Time,Verify PLP load time - Simulate page refresh during action,On PLP,"1. Open DevTools
+2. Refresh
+- Hit F5 mid-process",State is recovered or fails safely,Pending,Network tab,Medium,Minor,Interrupt,Unexecuted,Varies,Interrupt Variation
+TC_PERF_409,Performance Testing,Lazy Loading,Verify image lazy load,On PLP,1. Scroll down fast,Images load only when in viewport,Pending,N/A,Medium,Minor,Performance,Unexecuted,"Chrome, Safari, iOS, Android",Standard Case
+TC_PERF_410,Performance Testing,Lazy Loading,Verify image lazy load - Test max allowed string length,On PLP,"1. Scroll down fast
+- Input string of 255 chars",System handles limit gracefully,Pending,N/A,Medium,Minor,Boundary,Unexecuted,Varies,Boundary Variation
+TC_PERF_411,Performance Testing,Lazy Loading,Verify image lazy load - Test empty required fields,On PLP,"1. Scroll down fast
+- Submit without required data",Validation errors highlight fields,Pending,N/A,Medium,Minor,Negative,Unexecuted,Varies,Negative Variation
+TC_PERF_412,Performance Testing,Lazy Loading,Verify image lazy load - Test on Firefox,On PLP,"1. Scroll down fast
+- Perform action on Firefox browser",UI functions identically to Chrome,Pending,N/A,Medium,Minor,Cross-Browser,Unexecuted,Varies,Cross-Browser Variation
+TC_PERF_413,Performance Testing,Lazy Loading,Verify image lazy load - Test on small viewport (320px),On PLP,"1. Scroll down fast
+- Resize window to 320px and perform action",UI adjusts without overflow,Pending,N/A,Medium,Minor,Mobile,Unexecuted,Varies,Mobile Variation
+TC_PERF_414,Performance Testing,Lazy Loading,Verify image lazy load - Simulate page refresh during action,On PLP,"1. Scroll down fast
+- Hit F5 mid-process",State is recovered or fails safely,Pending,N/A,Medium,Minor,Interrupt,Unexecuted,Varies,Interrupt Variation
+TC_RESP_415,Responsive Testing,Mobile View,Verify hamburger menu,Mobile Device,1. Tap hamburger icon,Menu opens smoothly,Pending,iPhone 13,High,Major,UI,Unexecuted,"Chrome, Safari, iOS, Android",Standard Case
+TC_RESP_416,Responsive Testing,Mobile View,Verify hamburger menu - Test max allowed string length,Mobile Device,"1. Tap hamburger icon
+- Input string of 255 chars",System handles limit gracefully,Pending,iPhone 13,Medium,Minor,Boundary,Unexecuted,Varies,Boundary Variation
+TC_RESP_417,Responsive Testing,Mobile View,Verify hamburger menu - Test empty required fields,Mobile Device,"1. Tap hamburger icon
+- Submit without required data",Validation errors highlight fields,Pending,iPhone 13,Medium,Minor,Negative,Unexecuted,Varies,Negative Variation
+TC_RESP_418,Responsive Testing,Mobile View,Verify hamburger menu - Test on Firefox,Mobile Device,"1. Tap hamburger icon
+- Perform action on Firefox browser",UI functions identically to Chrome,Pending,iPhone 13,Medium,Minor,Cross-Browser,Unexecuted,Varies,Cross-Browser Variation
+TC_RESP_419,Responsive Testing,Mobile View,Verify hamburger menu - Test on small viewport (320px),Mobile Device,"1. Tap hamburger icon
+- Resize window to 320px and perform action",UI adjusts without overflow,Pending,iPhone 13,Medium,Minor,Mobile,Unexecuted,Varies,Mobile Variation
+TC_RESP_420,Responsive Testing,Mobile View,Verify hamburger menu - Simulate page refresh during action,Mobile Device,"1. Tap hamburger icon
+- Hit F5 mid-process",State is recovered or fails safely,Pending,iPhone 13,Medium,Minor,Interrupt,Unexecuted,Varies,Interrupt Variation
+TC_RESP_421,Responsive Testing,Tablet View,Verify grid columns,Tablet Device,1. View PLP,Grid shows 2 or 3 columns,Pending,iPad,Medium,Minor,UI,Unexecuted,"Chrome, Safari, iOS, Android",Standard Case
+TC_RESP_422,Responsive Testing,Tablet View,Verify grid columns - Test max allowed string length,Tablet Device,"1. View PLP
+- Input string of 255 chars",System handles limit gracefully,Pending,iPad,Medium,Minor,Boundary,Unexecuted,Varies,Boundary Variation
+TC_RESP_423,Responsive Testing,Tablet View,Verify grid columns - Test empty required fields,Tablet Device,"1. View PLP
+- Submit without required data",Validation errors highlight fields,Pending,iPad,Medium,Minor,Negative,Unexecuted,Varies,Negative Variation
+TC_RESP_424,Responsive Testing,Tablet View,Verify grid columns - Test on Firefox,Tablet Device,"1. View PLP
+- Perform action on Firefox browser",UI functions identically to Chrome,Pending,iPad,Medium,Minor,Cross-Browser,Unexecuted,Varies,Cross-Browser Variation
+TC_RESP_425,Responsive Testing,Tablet View,Verify grid columns - Test on small viewport (320px),Tablet Device,"1. View PLP
+- Resize window to 320px and perform action",UI adjusts without overflow,Pending,iPad,Medium,Minor,Mobile,Unexecuted,Varies,Mobile Variation
+TC_RESP_426,Responsive Testing,Tablet View,Verify grid columns - Simulate page refresh during action,Tablet Device,"1. View PLP
+- Hit F5 mid-process",State is recovered or fails safely,Pending,iPad,Medium,Minor,Interrupt,Unexecuted,Varies,Interrupt Variation
+TC_A11Y_427,Accessibility Testing,Keyboard Nav,Verify tab through checkout,In Checkout,1. Use Tab key,"Focus moves logically, visible",Pending,Keyboard,Medium,Major,UI,Unexecuted,"Chrome, Safari, iOS, Android",Standard Case
+TC_A11Y_428,Accessibility Testing,Keyboard Nav,Verify tab through checkout - Test max allowed string length,In Checkout,"1. Use Tab key
+- Input string of 255 chars",System handles limit gracefully,Pending,Keyboard,Medium,Minor,Boundary,Unexecuted,Varies,Boundary Variation
+TC_A11Y_429,Accessibility Testing,Keyboard Nav,Verify tab through checkout - Test empty required fields,In Checkout,"1. Use Tab key
+- Submit without required data",Validation errors highlight fields,Pending,Keyboard,Medium,Minor,Negative,Unexecuted,Varies,Negative Variation
+TC_A11Y_430,Accessibility Testing,Keyboard Nav,Verify tab through checkout - Test on Firefox,In Checkout,"1. Use Tab key
+- Perform action on Firefox browser",UI functions identically to Chrome,Pending,Keyboard,Medium,Minor,Cross-Browser,Unexecuted,Varies,Cross-Browser Variation
+TC_A11Y_431,Accessibility Testing,Keyboard Nav,Verify tab through checkout - Test on small viewport (320px),In Checkout,"1. Use Tab key
+- Resize window to 320px and perform action",UI adjusts without overflow,Pending,Keyboard,Medium,Minor,Mobile,Unexecuted,Varies,Mobile Variation
+TC_A11Y_432,Accessibility Testing,Keyboard Nav,Verify tab through checkout - Simulate page refresh during action,In Checkout,"1. Use Tab key
+- Hit F5 mid-process",State is recovered or fails safely,Pending,Keyboard,Medium,Minor,Interrupt,Unexecuted,Varies,Interrupt Variation
+TC_A11Y_433,Accessibility Testing,Screen Reader,Verify alt text on images,On Homepage,1. Inspect banner img,alt attribute is descriptive,Pending,Screen Reader,Medium,Major,Validation,Unexecuted,"Chrome, Safari, iOS, Android",Standard Case
+TC_A11Y_434,Accessibility Testing,Screen Reader,Verify alt text on images - Test max allowed string length,On Homepage,"1. Inspect banner img
+- Input string of 255 chars",System handles limit gracefully,Pending,Screen Reader,Medium,Minor,Boundary,Unexecuted,Varies,Boundary Variation
+TC_A11Y_435,Accessibility Testing,Screen Reader,Verify alt text on images - Test empty required fields,On Homepage,"1. Inspect banner img
+- Submit without required data",Validation errors highlight fields,Pending,Screen Reader,Medium,Minor,Negative,Unexecuted,Varies,Negative Variation
+TC_A11Y_436,Accessibility Testing,Screen Reader,Verify alt text on images - Test on Firefox,On Homepage,"1. Inspect banner img
+- Perform action on Firefox browser",UI functions identically to Chrome,Pending,Screen Reader,Medium,Minor,Cross-Browser,Unexecuted,Varies,Cross-Browser Variation
+TC_A11Y_437,Accessibility Testing,Screen Reader,Verify alt text on images - Test on small viewport (320px),On Homepage,"1. Inspect banner img
+- Resize window to 320px and perform action",UI adjusts without overflow,Pending,Screen Reader,Medium,Minor,Mobile,Unexecuted,Varies,Mobile Variation
+TC_A11Y_438,Accessibility Testing,Screen Reader,Verify alt text on images - Simulate page refresh during action,On Homepage,"1. Inspect banner img
+- Hit F5 mid-process",State is recovered or fails safely,Pending,Screen Reader,Medium,Minor,Interrupt,Unexecuted,Varies,Interrupt Variation
+TC_API_439,API Testing,Product API,Verify GET /products,Postman,1. Send GET request,"200 OK, returns product array",Pending,Postman,High,Critical,API,Unexecuted,"Chrome, Safari, iOS, Android",Standard Case
+TC_API_440,API Testing,Product API,Verify GET /products - Test max allowed string length,Postman,"1. Send GET request
+- Input string of 255 chars",System handles limit gracefully,Pending,Postman,Medium,Minor,Boundary,Unexecuted,Varies,Boundary Variation
+TC_API_441,API Testing,Product API,Verify GET /products - Test empty required fields,Postman,"1. Send GET request
+- Submit without required data",Validation errors highlight fields,Pending,Postman,Medium,Minor,Negative,Unexecuted,Varies,Negative Variation
+TC_API_442,API Testing,Product API,Verify GET /products - Test on Firefox,Postman,"1. Send GET request
+- Perform action on Firefox browser",UI functions identically to Chrome,Pending,Postman,Medium,Minor,Cross-Browser,Unexecuted,Varies,Cross-Browser Variation
+TC_API_443,API Testing,Product API,Verify GET /products - Test on small viewport (320px),Postman,"1. Send GET request
+- Resize window to 320px and perform action",UI adjusts without overflow,Pending,Postman,Medium,Minor,Mobile,Unexecuted,Varies,Mobile Variation
+TC_API_444,API Testing,Product API,Verify GET /products - Simulate page refresh during action,Postman,"1. Send GET request
+- Hit F5 mid-process",State is recovered or fails safely,Pending,Postman,Medium,Minor,Interrupt,Unexecuted,Varies,Interrupt Variation
+TC_API_445,API Testing,Cart API,Verify POST /cart,Postman,1. Send valid JSON,"201 Created, cart updated",Pending,JSON Payload,High,Critical,API,Unexecuted,"Chrome, Safari, iOS, Android",Standard Case
+TC_API_446,API Testing,Cart API,Verify POST /cart - Test max allowed string length,Postman,"1. Send valid JSON
+- Input string of 255 chars",System handles limit gracefully,Pending,JSON Payload,Medium,Minor,Boundary,Unexecuted,Varies,Boundary Variation
+TC_API_447,API Testing,Cart API,Verify POST /cart - Test empty required fields,Postman,"1. Send valid JSON
+- Submit without required data",Validation errors highlight fields,Pending,JSON Payload,Medium,Minor,Negative,Unexecuted,Varies,Negative Variation
+TC_API_448,API Testing,Cart API,Verify POST /cart - Test on Firefox,Postman,"1. Send valid JSON
+- Perform action on Firefox browser",UI functions identically to Chrome,Pending,JSON Payload,Medium,Minor,Cross-Browser,Unexecuted,Varies,Cross-Browser Variation
+TC_API_449,API Testing,Cart API,Verify POST /cart - Test on small viewport (320px),Postman,"1. Send valid JSON
+- Resize window to 320px and perform action",UI adjusts without overflow,Pending,JSON Payload,Medium,Minor,Mobile,Unexecuted,Varies,Mobile Variation
+TC_API_450,API Testing,Cart API,Verify POST /cart - Simulate page refresh during action,Postman,"1. Send valid JSON
+- Hit F5 mid-process",State is recovered or fails safely,Pending,JSON Payload,Medium,Minor,Interrupt,Unexecuted,Varies,Interrupt Variation
+TC_NOTIF_451,Notification Testing,Email,Verify password reset email UI,Email Client,"1. Trigger reset
+2. Open email",Email matches brand design,Pending,Email Inbox,Medium,Minor,UI,Unexecuted,"Chrome, Safari, iOS, Android",Standard Case
+TC_NOTIF_452,Notification Testing,Email,Verify password reset email UI - Test max allowed string length,Email Client,"1. Trigger reset
+2. Open email
+- Input string of 255 chars",System handles limit gracefully,Pending,Email Inbox,Medium,Minor,Boundary,Unexecuted,Varies,Boundary Variation
+TC_NOTIF_453,Notification Testing,Email,Verify password reset email UI - Test empty required fields,Email Client,"1. Trigger reset
+2. Open email
+- Submit without required data",Validation errors highlight fields,Pending,Email Inbox,Medium,Minor,Negative,Unexecuted,Varies,Negative Variation
+TC_NOTIF_454,Notification Testing,Email,Verify password reset email UI - Test on Firefox,Email Client,"1. Trigger reset
+2. Open email
+- Perform action on Firefox browser",UI functions identically to Chrome,Pending,Email Inbox,Medium,Minor,Cross-Browser,Unexecuted,Varies,Cross-Browser Variation
+TC_NOTIF_455,Notification Testing,Email,Verify password reset email UI - Test on small viewport (320px),Email Client,"1. Trigger reset
+2. Open email
+- Resize window to 320px and perform action",UI adjusts without overflow,Pending,Email Inbox,Medium,Minor,Mobile,Unexecuted,Varies,Mobile Variation
+TC_NOTIF_456,Notification Testing,Email,Verify password reset email UI - Simulate page refresh during action,Email Client,"1. Trigger reset
+2. Open email
+- Hit F5 mid-process",State is recovered or fails safely,Pending,Email Inbox,Medium,Minor,Interrupt,Unexecuted,Varies,Interrupt Variation
+TC_NOTIF_457,Notification Testing,SMS,Verify OTP SMS delivery,Mobile Phone,1. Trigger OTP,SMS received within 10s,Pending,Phone Number,High,Critical,Integration,Unexecuted,"Chrome, Safari, iOS, Android",Standard Case
+TC_NOTIF_458,Notification Testing,SMS,Verify OTP SMS delivery - Test max allowed string length,Mobile Phone,"1. Trigger OTP
+- Input string of 255 chars",System handles limit gracefully,Pending,Phone Number,Medium,Minor,Boundary,Unexecuted,Varies,Boundary Variation
+TC_NOTIF_459,Notification Testing,SMS,Verify OTP SMS delivery - Test empty required fields,Mobile Phone,"1. Trigger OTP
+- Submit without required data",Validation errors highlight fields,Pending,Phone Number,Medium,Minor,Negative,Unexecuted,Varies,Negative Variation
+TC_NOTIF_460,Notification Testing,SMS,Verify OTP SMS delivery - Test on Firefox,Mobile Phone,"1. Trigger OTP
+- Perform action on Firefox browser",UI functions identically to Chrome,Pending,Phone Number,Medium,Minor,Cross-Browser,Unexecuted,Varies,Cross-Browser Variation
+TC_NOTIF_461,Notification Testing,SMS,Verify OTP SMS delivery - Test on small viewport (320px),Mobile Phone,"1. Trigger OTP
+- Resize window to 320px and perform action",UI adjusts without overflow,Pending,Phone Number,Medium,Minor,Mobile,Unexecuted,Varies,Mobile Variation
+TC_NOTIF_462,Notification Testing,SMS,Verify OTP SMS delivery - Simulate page refresh during action,Mobile Phone,"1. Trigger OTP
+- Hit F5 mid-process",State is recovered or fails safely,Pending,Phone Number,Medium,Minor,Interrupt,Unexecuted,Varies,Interrupt Variation
+TC_EDGE_463,Edge Cases,Cart Out of Stock,Verify cart behavior if OOS,Item in Cart,"1. Admin sets stock 0
+2. User goes to checkout",Error: Item removed from cart,Pending,Admin Access,High,Critical,Functional,Unexecuted,"Chrome, Safari, iOS, Android",Standard Case
+TC_EDGE_464,Edge Cases,Cart Out of Stock,Verify cart behavior if OOS - Test max allowed string length,Item in Cart,"1. Admin sets stock 0
+2. User goes to checkout
+- Input string of 255 chars",System handles limit gracefully,Pending,Admin Access,Medium,Minor,Boundary,Unexecuted,Varies,Boundary Variation
+TC_EDGE_465,Edge Cases,Cart Out of Stock,Verify cart behavior if OOS - Test empty required fields,Item in Cart,"1. Admin sets stock 0
+2. User goes to checkout
+- Submit without required data",Validation errors highlight fields,Pending,Admin Access,Medium,Minor,Negative,Unexecuted,Varies,Negative Variation
+TC_EDGE_466,Edge Cases,Cart Out of Stock,Verify cart behavior if OOS - Test on Firefox,Item in Cart,"1. Admin sets stock 0
+2. User goes to checkout
+- Perform action on Firefox browser",UI functions identically to Chrome,Pending,Admin Access,Medium,Minor,Cross-Browser,Unexecuted,Varies,Cross-Browser Variation
+TC_EDGE_467,Edge Cases,Cart Out of Stock,Verify cart behavior if OOS - Test on small viewport (320px),Item in Cart,"1. Admin sets stock 0
+2. User goes to checkout
+- Resize window to 320px and perform action",UI adjusts without overflow,Pending,Admin Access,Medium,Minor,Mobile,Unexecuted,Varies,Mobile Variation
+TC_EDGE_468,Edge Cases,Cart Out of Stock,Verify cart behavior if OOS - Simulate page refresh during action,Item in Cart,"1. Admin sets stock 0
+2. User goes to checkout
+- Hit F5 mid-process",State is recovered or fails safely,Pending,Admin Access,Medium,Minor,Interrupt,Unexecuted,Varies,Interrupt Variation
+TC_EDGE_469,Edge Cases,Multi-tab,Verify cart sync across tabs,2 Tabs Open,"1. Add to cart in Tab A
+2. Check Tab B",Cart count updates in Tab B,Pending,N/A,Medium,Major,Functional,Unexecuted,"Chrome, Safari, iOS, Android",Standard Case
+TC_EDGE_470,Edge Cases,Multi-tab,Verify cart sync across tabs - Test max allowed string length,2 Tabs Open,"1. Add to cart in Tab A
+2. Check Tab B
+- Input string of 255 chars",System handles limit gracefully,Pending,N/A,Medium,Minor,Boundary,Unexecuted,Varies,Boundary Variation
+TC_EDGE_471,Edge Cases,Multi-tab,Verify cart sync across tabs - Test empty required fields,2 Tabs Open,"1. Add to cart in Tab A
+2. Check Tab B
+- Submit without required data",Validation errors highlight fields,Pending,N/A,Medium,Minor,Negative,Unexecuted,Varies,Negative Variation
+TC_EDGE_472,Edge Cases,Multi-tab,Verify cart sync across tabs - Test on Firefox,2 Tabs Open,"1. Add to cart in Tab A
+2. Check Tab B
+- Perform action on Firefox browser",UI functions identically to Chrome,Pending,N/A,Medium,Minor,Cross-Browser,Unexecuted,Varies,Cross-Browser Variation
+TC_EDGE_473,Edge Cases,Multi-tab,Verify cart sync across tabs - Test on small viewport (320px),2 Tabs Open,"1. Add to cart in Tab A
+2. Check Tab B
+- Resize window to 320px and perform action",UI adjusts without overflow,Pending,N/A,Medium,Minor,Mobile,Unexecuted,Varies,Mobile Variation
+TC_EDGE_474,Edge Cases,Multi-tab,Verify cart sync across tabs - Simulate page refresh during action,2 Tabs Open,"1. Add to cart in Tab A
+2. Check Tab B
+- Hit F5 mid-process",State is recovered or fails safely,Pending,N/A,Medium,Minor,Interrupt,Unexecuted,Varies,Interrupt Variation
+TC_EDGE_475,Edge Cases,Network Drop,Verify offline notification,Any page,1. Disconnect Wi-Fi,'You are offline' banner shown,Pending,No Internet,Medium,Minor,UI,Unexecuted,"Chrome, Safari, iOS, Android",Standard Case
+TC_EDGE_476,Edge Cases,Network Drop,Verify offline notification - Test max allowed string length,Any page,"1. Disconnect Wi-Fi
+- Input string of 255 chars",System handles limit gracefully,Pending,No Internet,Medium,Minor,Boundary,Unexecuted,Varies,Boundary Variation
+TC_EDGE_477,Edge Cases,Network Drop,Verify offline notification - Test empty required fields,Any page,"1. Disconnect Wi-Fi
+- Submit without required data",Validation errors highlight fields,Pending,No Internet,Medium,Minor,Negative,Unexecuted,Varies,Negative Variation
+TC_EDGE_478,Edge Cases,Network Drop,Verify offline notification - Test on Firefox,Any page,"1. Disconnect Wi-Fi
+- Perform action on Firefox browser",UI functions identically to Chrome,Pending,No Internet,Medium,Minor,Cross-Browser,Unexecuted,Varies,Cross-Browser Variation
+TC_EDGE_479,Edge Cases,Network Drop,Verify offline notification - Test on small viewport (320px),Any page,"1. Disconnect Wi-Fi
+- Resize window to 320px and perform action",UI adjusts without overflow,Pending,No Internet,Medium,Minor,Mobile,Unexecuted,Varies,Mobile Variation
+TC_EDGE_480,Edge Cases,Network Drop,Verify offline notification - Simulate page refresh during action,Any page,"1. Disconnect Wi-Fi
+- Hit F5 mid-process",State is recovered or fails safely,Pending,No Internet,Medium,Minor,Interrupt,Unexecuted,Varies,Interrupt Variation
+TC_ANLT_481,Analytics Testing,Add to Cart Event,Verify GA4 event,On PDP,"1. Click Add to Cart
+2. Check GA debugger",add_to_cart event fires with value,Pending,GA Debugger,Medium,Major,Integration,Unexecuted,"Chrome, Safari, iOS, Android",Standard Case
+TC_ANLT_482,Analytics Testing,Add to Cart Event,Verify GA4 event - Test max allowed string length,On PDP,"1. Click Add to Cart
+2. Check GA debugger
+- Input string of 255 chars",System handles limit gracefully,Pending,GA Debugger,Medium,Minor,Boundary,Unexecuted,Varies,Boundary Variation
+TC_ANLT_483,Analytics Testing,Add to Cart Event,Verify GA4 event - Test empty required fields,On PDP,"1. Click Add to Cart
+2. Check GA debugger
+- Submit without required data",Validation errors highlight fields,Pending,GA Debugger,Medium,Minor,Negative,Unexecuted,Varies,Negative Variation
+TC_ANLT_484,Analytics Testing,Add to Cart Event,Verify GA4 event - Test on Firefox,On PDP,"1. Click Add to Cart
+2. Check GA debugger
+- Perform action on Firefox browser",UI functions identically to Chrome,Pending,GA Debugger,Medium,Minor,Cross-Browser,Unexecuted,Varies,Cross-Browser Variation
+TC_ANLT_485,Analytics Testing,Add to Cart Event,Verify GA4 event - Test on small viewport (320px),On PDP,"1. Click Add to Cart
+2. Check GA debugger
+- Resize window to 320px and perform action",UI adjusts without overflow,Pending,GA Debugger,Medium,Minor,Mobile,Unexecuted,Varies,Mobile Variation
+TC_ANLT_486,Analytics Testing,Add to Cart Event,Verify GA4 event - Simulate page refresh during action,On PDP,"1. Click Add to Cart
+2. Check GA debugger
+- Hit F5 mid-process",State is recovered or fails safely,Pending,GA Debugger,Medium,Minor,Interrupt,Unexecuted,Varies,Interrupt Variation
+TC_ANLT_487,Analytics Testing,Purchase Event,Verify purchase tracking,Order Success,"1. View page
+2. Check GA debugger",purchase event fires with order ID,Pending,GA Debugger,High,Critical,Integration,Unexecuted,"Chrome, Safari, iOS, Android",Standard Case
+TC_ANLT_488,Analytics Testing,Purchase Event,Verify purchase tracking - Test max allowed string length,Order Success,"1. View page
+2. Check GA debugger
+- Input string of 255 chars",System handles limit gracefully,Pending,GA Debugger,Medium,Minor,Boundary,Unexecuted,Varies,Boundary Variation
+TC_ANLT_489,Analytics Testing,Purchase Event,Verify purchase tracking - Test empty required fields,Order Success,"1. View page
+2. Check GA debugger
+- Submit without required data",Validation errors highlight fields,Pending,GA Debugger,Medium,Minor,Negative,Unexecuted,Varies,Negative Variation
+TC_ANLT_490,Analytics Testing,Purchase Event,Verify purchase tracking - Test on Firefox,Order Success,"1. View page
+2. Check GA debugger
+- Perform action on Firefox browser",UI functions identically to Chrome,Pending,GA Debugger,Medium,Minor,Cross-Browser,Unexecuted,Varies,Cross-Browser Variation
+TC_ANLT_491,Analytics Testing,Purchase Event,Verify purchase tracking - Test on small viewport (320px),Order Success,"1. View page
+2. Check GA debugger
+- Resize window to 320px and perform action",UI adjusts without overflow,Pending,GA Debugger,Medium,Minor,Mobile,Unexecuted,Varies,Mobile Variation
+TC_ANLT_492,Analytics Testing,Purchase Event,Verify purchase tracking - Simulate page refresh during action,Order Success,"1. View page
+2. Check GA debugger
+- Hit F5 mid-process",State is recovered or fails safely,Pending,GA Debugger,Medium,Minor,Interrupt,Unexecuted,Varies,Interrupt Variation

@@ -1,0 +1,40 @@
+
+> vivasaya-ullagam@0.1.0 dev
+> next dev -p 3000
+
+▲ Next.js 16.2.6 (Turbopack)
+- Local:         http://localhost:3000
+- Network:       http://192.168.29.161:3000
+- Environments: .env.local
+✓ Ready in 21.8s
+Creating turbopack project {
+  dir: 'C:\\Users\\legion\\Documents\\Vivasaya Ullagam\\vivasaya-ullagam',
+  testMode: true
+}
+
+○ Compiling /auth ...
+ GET /auth 200 in 30.3s (next.js: 7.9s, application-code: 22.4s)
+ GET /cart 200 in 30.7s (next.js: 24.3s, application-code: 6.4s)
+ GET /auth 200 in 1065ms (next.js: 53ms, application-code: 1011ms)
+ GET /api/settings 200 in 592ms (next.js: 394ms, application-code: 198ms)
+ GET /api/categories 200 in 1107ms (next.js: 536ms, application-code: 571ms)
+ GET /api/settings 200 in 437ms (next.js: 97ms, application-code: 340ms)
+ GET /api/settings 200 in 88ms (next.js: 23ms, application-code: 65ms)
+ GET /api/settings 200 in 47ms (next.js: 9ms, application-code: 38ms)
+ GET /api/auth/providers 200 in 5.3s (next.js: 5.2s, application-code: 47ms)
+ GET /api/auth/session 200 in 99ms (next.js: 33ms, application-code: 65ms)
+ GET /api/auth/session 200 in 81ms (next.js: 43ms, application-code: 38ms)
+○ Compiling /api/auth/otp/send ...
+(node:27276) [MONGOOSE] Warning: mongoose: the `new` option for `findOneAndUpdate()` and `findOneAndReplace()` is deprecated. Use `returnDocument: 'after'` instead.
+(Use `node --trace-warnings ...` to show where the warning was created)
+Error sending email: Error: Invalid login: 535-5.7.8 Username and Password not accepted. For more information, go to
+535 5.7.8  https://support.google.com/mail/?p=BadCredentials 41be03b00d2f7-c85772d5ebasm6172423a12.27 - gsmtp
+    at ignore-listed frames {
+  code: 'EAUTH',
+  response: '535-5.7.8 Username and Password not accepted. For more information, go to\n' +
+    '535 5.7.8  https://support.google.com/mail/?p=BadCredentials 41be03b00d2f7-c85772d5ebasm6172423a12.27 - gsmtp',
+  responseCode: 535,
+  command: 'AUTH PLAIN'
+}
+ POST /api/auth/otp/send 500 in 6.0s (next.js: 4.5s, application-code: 1489ms)
+ GET /api/auth/session 200 in 148ms (next.js: 76ms, application-code: 72ms)

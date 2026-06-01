@@ -1,0 +1,30 @@
+import { NextRequest, NextResponse } from 'next/server';
+import dbConnect from '@/lib/db';
+import Order from '@/models/Order';
+import { getServerSession } from 'next-auth';
+import { authOptions } from '@/lib/auth';
+
+export const dynamic = 'force-dynamic';
+
+export async function GET() {
+  try {
+    const session = await getServerSession(authOptions);
+    if (!session || !session.user) {
+      return NextResponse.json({ error: 'Unauthorized' }, { status: 401 });
+    }
+    
+    await dbConnect();
+    
+    const userId = (session.user as any).id;
+    if (!userId) {
+      return NextResponse.json({ error: 'User ID missing in session' }, { status: 400 });
+    }
+
+    const orders = await Order.find({ user: userId }).sort({ createdAt: -1 }).lean();
+    
+    return NextResponse.json({ success: true, orders });
+  } catch (error: any) {
+    console.error('Fetch user orders error:', error);
+    return NextResponse.json({ success: false, error: error.message || 'Failed to fetch orders' }, { status: 500 });
+  }
+}
